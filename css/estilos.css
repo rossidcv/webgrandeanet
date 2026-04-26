@@ -396,7 +396,7 @@ video {
   padding-left: 130px;
 }
 .caracteristicas {
-  padding: 25px;
+  padding: 20px;
   border:1px solid #fff;
   border-radius:30px;
   margin-top: 40px;
@@ -406,7 +406,7 @@ video {
   padding: 0;
 }
 .caracteristicas li {
-  padding:5px 0 ;
+  padding:0 ;
 }
 .caracteristicas h2 {
   font-family: 'Cambai Minimalist', sans-serif;  
@@ -455,7 +455,6 @@ video {
   background-size: cover; 
   background-position: left; 
   background-repeat: no-repeat;
-
 }
 .carousel-inner{
   border-radius: 30px;
@@ -464,6 +463,18 @@ video {
   overflow: hidden;/* CORTA TODO LO QUE SOBRESALE */
   position: relative;
 }
+.carousel-item:before{ background: url(../imagenes/textura-overlay.png) repeat center center rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+opacity: 0.5}
+
 .carousel-indicators [data-bs-target] {
   background-color:#fff;
   width: 8px;
@@ -483,34 +494,38 @@ video {
   height: 100%;
   object-fit: cover; /* Ajusta la imagen sin deformarla */
 }
-#carousel p  {
+#carousel .parrafo  {
   font-family: "Raleway", sans-serif;
   font-size: 12px;
   color: #fff;
   text-align: center;
   width: 70%;
   margin: 0 auto;
-  border-top: 2px solid #fff;
+  border-top: ;
   padding-top: 40px;
   line-height: 21px;
+  position: relative;
+  top:  -50%;
+}
+.carousel-caption {
+  height: 100%;
+  width: 100%;
+  display: table;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  position: absolute;
+  right: 50%;
+  left: 0%;
+  top: 50%;
 }
 
-
-
-
-
-
-
-
-
+/* SECCIÓN CRITERIOS */
 label > * {
   transform: translateZ(0) scale(1, 1);
 }
-
 .wrapper > * {
   cursor: pointer;
 }
-
 .wrapper {
   position: relative;
   top: 50%;
@@ -590,18 +605,103 @@ input:checked + .toggle .toggle--handler:before {
 
 
 
+/* SECCIÓN CARDS */
+.card {
+  position: relative;
+  width: 200px;
+  height: 350px;
+  margin: 15px;
+  border:none;    
+  background-color: #ffffff00 !important;
+}
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+}
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 25px;
+  line-height: 45px;
+  color: #fff;
+  background:;
+  text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
-
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(95, 100, 29, 0);
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+  width: 200px;
+  min-height: 250px;
+  height: auto;
+  top: 50px;
+  left: 0;
+  position: absolute;
+}
+.card .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+  display:inline;
+}
+.card .back .link a {
+  color: #f3f3f3;
+}
+.card .back h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.card .back p {
+  letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  color: #fff;
+} 
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+.card .btn  {
+  background-color:#6d5497;
+  border-radius: 50px;
+  width: auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
 
 
 
@@ -641,7 +741,7 @@ input:checked + .toggle .toggle--handler:before {
     transform: translateY(0);
     margin: 0;
   }  
-  #carousel p {
+  #carousel .parrafo {
     width: 100%;
   }
   .quiensoy p,
@@ -660,7 +760,7 @@ input:checked + .toggle .toggle--handler:before {
   .navbar-nav li a:hover {
     color:#6d5497; 
   }
-  #carousel p {
+  #carousel .parrafo {
     padding: 30px 0 0 0 !important;
   }
   .carousel-inner { 
