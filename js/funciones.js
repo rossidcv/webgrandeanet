@@ -18,3 +18,8 @@ $(window).scroll(function () {
   }
 });
 
+// Selecciona todos los inputs de tipo checkbox y los marca
+var allCheckboxes = document.querySelectorAll('input[type="checkbox"]');
+for (var i = 0; i < allCheckboxes.length; i++) {
+    allCheckboxes[i].checked = true;
+}
