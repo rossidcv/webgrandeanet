@@ -703,9 +703,15 @@ input:checked + .toggle .toggle--handler:before {
   text-transform: uppercase;
 }
 
-
-
-
+.imagen {
+  height: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imagen img{
+  width: 60%;
+}
 
 
 /* =========== Media Queries =========== */
