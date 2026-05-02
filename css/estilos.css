@@ -393,35 +393,54 @@ video {
   margin: 0 auto;
 }
 .recorrido {
-  padding-left: 130px;
+  padding-left: 175px;
 }
 .caracteristicas {
   padding: 20px;
-  border:1px solid #fff;
+  border:1px solid #fff ;
   border-radius:30px;
   margin-top: 40px;
+  border: 5px solid #0000;
+  border-radius: 25px;  
+  position: relative;
+
+  }
+.caracteristicas:before {
+  content:"";
+  position: absolute;
+  inset: 0;
+  padding: 1px; /* the border length */
+  background: linear-gradient(155deg,#fff,#251653);
+  border-radius: inherit;
+  --m:conic-gradient(#000 0 0);
+  mask: var(--m) content-box exclude,var(--m);
+  pointer-events: none;
 }
 .caracteristicas ul {
   margin-bottom: 0; 
   padding: 0;
 }
 .caracteristicas li {
-  padding:0 ;
+  padding:3px 0 ;
 }
 .caracteristicas h2 {
   font-family: 'Cambai Minimalist', sans-serif;  
   font-size: 20px;
   color: #fff;
   letter-spacing: 2px;
+  font-weight: lighter;
   margin: 0  auto 0 0;  
 }
 .caracteristicas h2 {
   text-align: left;
 }
+.caracteristicas img {
+  width: 15%;
+}
 .quiensoy p,
 .herramientas p {
   font-family: "Raleway", sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   color: #fff;
   text-align: right;
   line-height: 21px;
@@ -446,6 +465,51 @@ video {
 .herramientas {
   padding-top: 50px;
 }
+
+.iconos-herramientas,
+.iconos-herramientas2,
+.iconos-herramientas3,
+.iconos-herramientas4 {
+  display: flex; 
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  padding: 15px 0;  
+}
+.iconos-herramientas img,
+.iconos-herramientas2 img,
+.iconos-herramientas3 img,
+.iconos-herramientas4 img {
+  width: 60px;
+}
+.imagen {
+  /*margin: 0 auto;*/
+  position: relative;
+  /*display: block;*/
+  overflow: hidden;  
+}
+.grupo-iconos {
+  margin: 0 0 auto;
+  width: 50%;
+  position: relative;
+  right: 50%;
+  left: 50%;
+  display: block;  margin-top: 60px;
+
+  /* overflow: hidden;*/
+}
+.imagen .imagen-tailandia{
+ width: 65%;
+  margin: 0;
+  position: relative;
+  display: block;
+  float: right;
+  right: 0;
+  height: -webkit-fill-available;
+  bottom: 0;
+  margin-top: 60px;
+}
+
 
 /* SECCIÓN DISEÑOS Y PROYECTOS */
 #carousel {
@@ -501,7 +565,7 @@ opacity: 0.5}
   text-align: center;
   width: 70%;
   margin: 0 auto;
-  border-top: ;
+  border-top: 1px solid #fff;
   padding-top: 40px;
   line-height: 21px;
   position: relative;
@@ -606,27 +670,24 @@ input:checked + .toggle .toggle--handler:before {
 
 
 /* SECCIÓN CARDS */
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
 .card {
   position: relative;
   width: 200px;
-  height: 350px;
-  margin: 15px;
-  border:none;    
-  background-color: #ffffff00 !important;
+  height: 250px;
+  margin: 5px;  
+  background-color: transparent !important; border: none;
 }
 .card .face {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 10px;
-  overflow: hidden;
   transition: .5s;
-}
-.cards{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 .card .front {
   transform: perspective(600px) rotateY(0deg);
@@ -636,9 +697,10 @@ input:checked + .toggle .toggle--handler:before {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 20px;
 }
 
-.card .front h3 {
+/*.card .front h3 {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -647,46 +709,53 @@ input:checked + .toggle .toggle--handler:before {
   color: #fff;
   background:;
   text-align: center;
-}
+  display: none;
+}*/
 
 .card .back {
   transform: perspective(600px) rotateY(180deg);
   background: rgb(95, 100, 29, 0);
-  padding: 15px;
   color: #f3f3f3;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   box-shadow: 0 5px 10px #000;
   width: 200px;
   min-height: 250px;
   height: auto;
-  top: 50px;
+  top: 0px;
   left: 0;
   position: absolute;
+  border-radius: 20px;
 }
 .card .back .link {
-  border-top: solid 1px #f3f3f3;
-  height: 50px;
-  line-height: 50px;
-  display:inline;
+  /*border-top:;*/
+  /*height: 50px;*/
+  /*line-height: 50px;*/
+  /*display:inline;*/
+  position: relative;
+  top: 50%;
+    left: 0%;
+    right: 0%;
 }
 .card .back .link a {
   color: #f3f3f3;
 }
-.card .back h3 {
+/*.card .back h3 {
   font-size: 20px;
   margin-top: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  display: none;
 }
 .card .back p {
   letter-spacing: 1px;
   font-family: "Raleway", sans-serif;
   font-size: 12px;
   color: #fff;
-} 
+  display: none;
+} */
 .card:hover .front {
   transform: perspective(600px) rotateY(180deg);
 }
@@ -703,25 +772,77 @@ input:checked + .toggle .toggle--handler:before {
   text-transform: uppercase;
 }
 
-.imagen {
-  height: -webkit-fill-available;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.celular {
+  position: relative;
+  background-color: red;
+  top: -10px;
 }
-.imagen img{
-  width: 60%;
+.celular img {
+  width: 100%;
+  position: absolute;
+}
+.feed {  
+  top: 45px;
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+}
+.feed img {
+  width: 100%;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.feed img:hover {
+  transform: scale(1.1); 
+} 
+.contenido-design img {
+  width: 100%;
+}
+.contenido-design .social-media{
+  width: 100%;
+  position: relative;  
+}
+.contenido-design {
+  margin-bottom: 20px;
+}
+.contenido-design .design {
+  width: 100%;
+  position: relative;
+  top:-30px;
+  left: -20px;
+}
+#trabajos p {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  color: #000;
+  text-align: left;
+  padding-left: 10px;
+}
+.pantallas  {
+  background-color:#fff; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  width: 80%;
+  float: right;
+}
+.cuadro img {
+  width: 100%;
+}
+.notebook {   
+  position: relative;
+  top: -22%;
+  left: -25%;
+  z-index: -999;  
 }
 
 
 /* =========== Media Queries =========== */
 
-
 @media (max-width: 1140px) {
 .recorrido {
     padding-left: 0;
   } 
-  } 
+} 
 @media (max-width: 980px) {
   nav ul{
     position:absolute;
@@ -755,6 +876,21 @@ input:checked + .toggle .toggle--handler:before {
     text-align: left;    
     padding: 0 !important; 
   }
+  .imagen .imagen-tailandia {
+    margin-top: 250px;
+  }  
+  .grupo-iconos {
+    margin-top: 180px;
+  }
+  .iconos-herramientas, 
+  .iconos-herramientas2, 
+  .iconos-herramientas3, 
+  .iconos-herramientas4 {
+    padding: 10px 0;
+  }
+  .feed {
+    margin-bottom: 80px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -772,6 +908,22 @@ input:checked + .toggle .toggle--handler:before {
   .carousel-inner { 
     height: auto;
   }
+  .imagen .imagen-tailandia {
+    margin-top: 0;
+    width: 100%;
+  }
+  .grupo-iconos {
+    margin-top: 40px;
+    position: absolute;
+    width: 100%;right: 0;
+    left: 0;
+  }
+  .imagen  {
+    margin-top: 50px;
+  }
+  .notebook {
+    left: -10%;
+  }
 }
 @media only screen and (max-width: 600px) { 
   .contenido-video h1 {
@@ -780,6 +932,12 @@ input:checked + .toggle .toggle--handler:before {
   .contenido-video h1 hr {
     height: 35px;
   }
+  .imagen .imagen-tailandia {  
+    margin-top: 50px;
+  }
+  .notebook {
+        left: 0;
+    }
 }
 
 
