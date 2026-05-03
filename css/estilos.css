@@ -355,16 +355,13 @@ video {
 .quiensoy {
   height: 100%;
   display: flex;
-  margin: 0 auto;
-  background-image: url('../imagenes/fondo-web.png');
-  background-size: contain;
-  background-position: left;
-  background-repeat: no-repeat;
-  position: relative;
-  top: -100px;
-  z-index: -1; 
-  padding:0;
-  width: 100%;
+  margin: 0 auto;  
+padding: 50px 0;
+    background-image: url(../imagenes/fondo1.png);
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
 }
 .quiensoy:before {
   background: #020024;
