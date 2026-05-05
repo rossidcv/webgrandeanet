@@ -356,12 +356,12 @@ video {
   height: 100%;
   display: flex;
   margin: 0 auto;  
-padding: 50px 0;
-    background-image: url(../imagenes/fondo1.png);
-    width: 100%;
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
+  padding: 50px 0;
+  background-image: url(../imagenes/fondo1.png);
+  width: 100%;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
 }
 .quiensoy:before {
   background: #020024;
@@ -552,7 +552,6 @@ padding: 50px 0;
   text-align: center;
   width: 70%;
   margin: 0 auto;
-  border-top: 1px solid #fff;
   padding-top: 40px;
   line-height: 21px;
   position: relative;
@@ -936,10 +935,16 @@ input:checked + .toggle .toggle--handler:before {
 /*CATÁLOGO VAPES*/
 #catalogo-vapes {
   overflow: hidden;
+  background-image: url(../.png);
+  width: 100%;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
   display: none;
 }
 .imagenes-catalogo-vapes {
   display: inline-block;
+  height:50%;
   /*justify-content: center;
   align-items: center;*/
 }
@@ -961,6 +966,31 @@ input:checked + .toggle .toggle--handler:before {
   margin: 1%; 
   display: block; 
   position: relative;
+}
+
+
+footer {
+  background-color: #6d5497;
+
+}
+footer i {
+  color: #fff;
+  font-size: 20px;
+  padding-right: 5px;
+  transition: transform 0.2s ease;
+}
+footer i:hover  {
+  transform: scale(1.1);
+}
+footer a {
+  display: flex;
+  align-items: center; /* Centrado vertical */
+  justify-content: center;
+}
+footer p{
+  color: #fff;
+  font-size: 12px;
+  display: inline;
 }
 /* =========== Media Queries =========== */
 
@@ -1052,6 +1082,7 @@ input:checked + .toggle .toggle--handler:before {
     height: auto;
   }
 }
+
 
 @media (max-width: 768px) {
   .navbar-nav li a {
