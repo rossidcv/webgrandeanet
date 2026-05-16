@@ -13,43 +13,43 @@
 <link href="https://db.onlinewebfonts.com/c/6fa591daa0aa2d0f845653486954aca5?family=Akira+Expanded" rel="stylesheet">
 
 <!-- JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="js/funciones.js"></script>
 
 <!-- CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 <link rel="stylesheet" type="text/css" href="css/estilos.css">
-
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="5">  
-  <header class="header">
-    <nav class="navbar navbar-expand-lg"> 
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#inicio"> 
-            <h2>GRANDE | ANET</h2>
-            <p>PORTFOLIO</p> 
-          </a>
-        </div><!-- Cierra navbar-header -->
+<body data-bs-spy="scroll" data-bs-offset="1">
+  <nav class="navbar" data-target=".navbar-collapse" data-toggle="collapse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#inicio"> 
+          <h2>GRANDE | ANET</h2>
+          <p>PORTFOLIO</p> 
+        </a>
+      </div> <!-- Cierra navbar-header -->        
 
-        <ul class="nav navbar-nav m-auto">
-          <li class="nav-item active"><a href="#quiensoy">Anet Grande</a></li>
-          <li class="nav-item"><a href="#carousel">Diseños y proyectos</a></li>
-          <li class="nav-item"><a href="#quiensoy">Contacto</a></li>
-        </ul>
+      <button class="hamburger hamburger--minus" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">            
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
 
-        <div class="menu-bars" id="toggle">
-          <input type="checkbox">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div><!-- Cierra menu-bars --> 
-      </div><!-- Cierra container --> 
-    </nav>
-  </header>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div id="menu">
+          <ul class="nav navbar-nav m-auto">
+            <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"><a class="nav-link" href="#inicio">Anet Grande</a></li>
+            <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"><a class="nav-link" href="#carousel">Diseños y proyectos</a></li>
+            <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"><a class="nav-link" href="#">Contacto</a></li> 
+          </ul>
+        </div><!-- Cierra menu -->  
+      </div><!-- Cierra collapse -->  
+    </div><!-- Cierra container -->  
+  </nav>
 
   <main>
     <section class="inicio" id="inicio">
@@ -62,68 +62,73 @@
             <p>PORTFOLIO</p>
           </a>
         </div><!-- Cierra contenido-video -->  
-      </div><!-- Cierra contenedor-video -->        
-    </section>
+      </div><!-- Cierra contenedor-video --> 
 
-    <section class="quiensoy" id="quiensoy">
-      <div class="container pt-5">
-        <div class="col-md-6 offset-md-6">
-          <div class="recorrido">
-            <h2 class="pl-5">RECORRIDO</h2>
-            <p class="pl-5">Soy Anabel Grande diseñadora grafica y licenciada en turismo, busco por el mundo tendencias gráficas reales adaptadas a cada cultura humana que sean de aporte en cada trabajo y proyecto con el fin de mejorar la comunicación visual y funcional para cada cliente. </p>
-            <p class="pl-5">Cada lugar nuevo es parte de un descubrimiento que activa la creatividad para jugar con la incertidumbre de resolver nuevos escenarios. Aficionada por la iconografía y simbolismos que marcan un impacto en la comunicación en pocos trazos.</p>         
-
-            <h2 class="pl-5">SECTORES</h2>
-            <p class="pl-5"> Trabajé en proyectos gráficos con empresas tecnológicas, de salud y estética, comunicación entre otros, pero siempre bajo mi modalidad poder asesorar al cliente para darle un resultado visual y comunicacional de excelencia.</p>
-          </div><!-- Cierra recorrido --> 
-        </div><!-- Cierra col-md-6 --> 
-
-        <div class="yo">
+      <div class="contenido pb-5">
+        <div class="container">
           <div class="row">
-            <div class="col-md-4">
-              <div class="caracteristicas" >
-                <div class="content">
-                  <ul class="list">
-                    <li>
-                      <h2>ESENCIA</h2>
-                      <img src="imagenes/iconos.png" class="img-responsive">
-                    </li>
-                    <li>
-                      <h2>ARMONIA</h2>
-                      <img src="imagenes/iconos.png" class="img-responsive">
-                    </li>
-                    <li>
-                      <h2>CRITERIO</h2>
-                      <img src="imagenes/iconos.png" class="img-responsive">
-                    </li>
-                    <li>
-                      <h2>SIMPLEZA</h2>
-                      <img src="imagenes/iconos.png" class="img-responsive">
-                    </li>
-                    <li>
-                      <h2>SOBRIEDAD</h2>
-                      <img src="imagenes/iconos.png" class="img-responsive">
-                    </li>
-                    <li>
-                      <h2>ELEGANCIA</h2>
-                      <img src="imagenes/iconos.png" class="img-responsive">
-                    </li>
-                  </ul>
-                </div><!-- Cierra col md --> 
-              </div><!-- Cierra caracteristicas --> 
+          <div class="col-md-6">
+            <div class="imagen-anabel">
+              <img src="imagenes/fondo-web.png" class="img-responsive">
+            </div><!-- Cierra imagen-anabel -->
+          </div><!-- Cierra col-md-6 -->
 
-              <div class="herramientas">
-                <h2>HERRAMIENTAS</h2>
-                <p>En constante aprendizaje y actualización de las herramientas más importantes para el desarrollo del diseño gráfico. Tengo más de 4 años de experiencia diseñando con AI, PS, para diseño de folletos, flyers y piezas gráficas para redes sociales. Me fascina trabajar con AE para animación de videos institucionales, publicitarios y reels.</p>
-                <p>Actualmente me enfoco en nuevos conocimientos y desafios en diseño web, programación y bases de datos.</p>
-              </div><!-- Cierra herramientas --> 
-            </div><!-- Cierra col md -->
+          <div class="col-md-6">
+            <div class="recorrido">
+              <h2 class="pl-5">RECORRIDO</h2>
+              <p class="pl-5">Soy Anabel Grande diseñadora grafica y licenciada en turismo, busco por el mundo tendencias gráficas reales adaptadas a cada cultura humana que sean de aporte en cada trabajo y proyecto con el fin de mejorar la comunicación visual y funcional para cada cliente. </p>
+              <p class="pl-5">Cada lugar nuevo es parte de un descubrimiento que activa la creatividad para jugar con la incertidumbre de resolver nuevos escenarios. Aficionada por la iconografía y simbolismos que marcan un impacto en la comunicación en pocos trazos.</p>         
+              <h2 class="pl-5">SECTORES</h2>
+              <p class="pl-5  mb-0"> Trabajé en proyectos gráficos con empresas tecnológicas, de salud y estética, comunicación entre otros, pero siempre bajo mi modalidad poder asesorar al cliente para darle un resultado visual y comunicacional de excelencia.</p>
+            </div><!-- Cierra recorrido --> 
+          </div><!-- Cierra col-md-6 -->
+        </div><!-- Cierra row -->
+        </div><!-- Cierra container -->
 
-            <div class="col-md-8">
-              <div class="imagen">
-                <img src="imagenes/fondo-herramientas.png" class="imagen-tailandia img-responvise">              
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">              
+              <div class="caracteristicas">                
+                <ul class="lista-caracteristicas">
+                  <li>
+                    <h2>ESENCIA</h2>
+                    <img src="imagenes/iconos.png" class="img-responsive">
+                  </li>
+                  <li>
+                    <h2>ARMONIA</h2>
+                    <img src="imagenes/iconos.png" class="img-responsive">
+                  </li>
+                  <li>
+                    <h2>CRITERIO</h2>
+                    <img src="imagenes/iconos.png" class="img-responsive">
+                  </li>
+                  <li>
+                    <h2>SIMPLEZA</h2>
+                    <img src="imagenes/iconos.png" class="img-responsive">
+                  </li>
+                  <li>
+                    <h2>SOBRIEDAD</h2>
+                    <img src="imagenes/iconos.png" class="img-responsive">
+                  </li>
+                  <li>
+                    <h2>ELEGANCIA</h2>
+                    <img src="imagenes/iconos.png" class="img-responsive">
+                  </li>
+                </ul>                
+              </div><!-- Cierra caracteristicas -->
 
-                <div class="grupo-iconos">
+              <div class="herramientas pt-5">
+                <h2 style="text-align: left;">HERRAMIENTAS</h2>
+                <p style="text-align: left;">En constante aprendizaje y actualización de las herramientas más importantes para el desarrollo del diseño gráfico. Tengo más de 4 años de experiencia diseñando con AI, PS, para diseño de folletos, flyers y piezas gráficas para redes sociales. Me fascina trabajar con AE para animación de videos institucionales, publicitarios y reels.</p>
+                <p style="text-align: left;">Actualmente me enfoco en nuevos conocimientos y desafios en diseño web, programación y bases de datos.</p>
+              </div><!-- Cierra herramientas -->
+            </div><!-- Cierra col-md-6 -->
+
+            <div class="col-md-6"> 
+              <div class="grupo-iconos">
+                <img src="imagenes/fondo-herramientas.png" class="imagen-Anabel img-responvise">              
+
+                <div class="iconos">
                   <div class="iconos-herramientas"> 
                     <img src="imagenes/iconos-herramientas/ae.png" class="img-responvise" style="left:-20%; position:relative";>
                     <img src="imagenes/iconos-herramientas/python.png" class="img-responvise" style="left:20%; position:relative";>
@@ -142,16 +147,16 @@
                   <div class="iconos-herramientas"> 
                     <img src="imagenes/iconos-herramientas/ai.png" class="img-responvise" style="left:-20%; position:relative";>
                     <img src="imagenes/iconos-herramientas/mysql.png" class="img-responvise" style="left:20%; position:relative";>
-                  </div><!-- Cierra iconos-herramientas --> 
-                </div><!-- Cierra imagen -->
-              </div><!-- Cierra grupo-iconos --> 
-            </div><!-- Cierra col md -->                          
-          </div><!-- Cierra row -->       
-        </div><!-- Cierra yo --> 
-      </div><!-- Cierra container --> 
-    </section>  
+                  </div><!-- Cierra iconos-herramientas -->
+                </div><!-- Cierra iconos -->    
+              </div><!-- Cierra grupo-iconos -->             
+            </div><!-- Cierra col-md-6 -->
+          </div><!-- Cierra row --> 
+        </div><!-- Cierra container -->
+      </div><!-- Cierra contenido --> 
+    </section>
 
-    <section id="carousel">
+    <section id="carousel">      
       <div class="container">
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -197,25 +202,25 @@
           </button>
         </div><!-- Cierra carousel -->
 
-        <div class="container pt-5 text-center">
-          <div class="row">    
-            <p class="px-5 border-top parrafo">Para cada proyecto me gusta escuchar al cliente con detenimiento para detectar la esencia que quiere reflejar, eso 
-            me permite delinear el diseño preciso entre los requerimientos y la inspiración que recreo en mi mente que se enfoca en simplicar la idea con estilo y eficiencia en la comunicación para el usuario.</p>
-          </div><!-- Cierra row -->
-        </div><!-- Cierra container -->
-      </div><!-- Cierra carousel -->
+        <div class="contenido py-5">
+          <div class="container text-center">
+            <div class="row">    
+              <p class="px-5 mb-0 border-top" style="text-align:center">Para cada proyecto me gusta escuchar al cliente con detenimiento para detectar la esencia que quiere reflejar, eso me permite delinear el diseño preciso entre los requerimientos y la inspiración que recreo en mi mente que se enfoca en simplicar la idea con estilo y eficiencia en la comunicación para el usuario.</p>
+            </div><!-- Cierra row -->
+          </div><!-- Cierra container -->
+        </div><!-- Cierra carousel --> 
+      </div>   
 
-      <div class="container py-5">
+      <div class="container">
         <div class="row">  
           <div class="cards">
             <div class="card">
               <div class="face front">
                 <img src="imagenes/cards/card2.png" alt="Catálogos">
-                <h3></h3>
               </div><!-- Cierra face front -->
               <div class="face back">              
                 <div class="link">
-                  <a class="btn" href="#" role="button">Ver más</a>
+                  <a class="btn" href="https://docs.google.com/presentation/d/1MDThT1_RZWPEyJmTY6EuQ5iDhiLMd-_xkFGOZFDzumM/edit?usp=sharing" target="_blank" role="button">Ver más</a>
                 </div><!-- Cierra link -->
               </div><!-- Cierra face back -->
             </div><!-- Cierra card -->
@@ -226,7 +231,7 @@
               </div><!-- Cierra face front -->
               <div class="face back">
                 <div class="link">
-                  <a class="btn" href="#" role="button">Ver más</a>
+                  <a class="btn" href="https://docs.google.com/presentation/d/1MDThT1_RZWPEyJmTY6EuQ5iDhiLMd-_xkFGOZFDzumM/edit?usp=sharing" target="_blank" role="button">Ver más</a>
                 </div><!-- Cierra link -->
               </div><!-- Cierra face back -->
             </div><!-- Cierra card -->
@@ -237,7 +242,7 @@
               </div><!-- Cierra face front -->
               <div class="face back">
                 <div class="link">
-                  <a class="btn" href="#" role="button">Ver más</a>
+                  <a class="btn" href="https://docs.google.com/presentation/d/1MDThT1_RZWPEyJmTY6EuQ5iDhiLMd-_xkFGOZFDzumM/edit?usp=sharing" target="_blank" role="button">Ver más</a>
                 </div><!-- Cierra link -->
               </div><!-- Cierra face back -->
             </div><!-- Cierra card -->
@@ -248,7 +253,7 @@
               </div><!-- Cierra face front -->
               <div class="face back">
                 <div class="link">
-                  <a class="btn" href="#" role="button">Ver más</a>
+                  <a class="btn" href="https://docs.google.com/presentation/d/1MDThT1_RZWPEyJmTY6EuQ5iDhiLMd-_xkFGOZFDzumM/edit?usp=sharing" target="_blank" role="button">Ver más</a>
                 </div><!-- Cierra link -->
               </div><!-- Cierra face back -->
             </div><!-- Cierra card -->
@@ -259,7 +264,7 @@
               </div><!-- Cierra face front -->
               <div class="face back">
                 <div class="link">
-                  <a class="btn" href="#" role="button">Ver más</a>
+                  <a class="btn" href="https://docs.google.com/presentation/d/1MDThT1_RZWPEyJmTY6EuQ5iDhiLMd-_xkFGOZFDzumM/edit?usp=sharing" target="_blank" role="button">Ver más</a>
                 </div><!-- Cierra link -->
               </div><!-- Cierra face back -->
             </div><!-- Cierra card -->
@@ -271,49 +276,49 @@
     <section id="digital">
       <div class="container py-5">
         <div class="row">
-          <div class="col-lg-4">
-            <div class="celular">                
-              <img src="imagenes/digital/telefono/cel.png" class="img-responsive">
-            </div><!-- Cierra celular -->
+          <div class="col-md-12 col-lg-6">
+            <div class="imagen-digital">                
+              <img src="imagenes/digital/telefono/cel.png" class="img-responsive">             
 
-            <div class="feed">
-              <img src="imagenes/digital/telefono/feed1.png" class="img-responsive">
-              <img src="imagenes/digital/telefono/feed2.png" class="img-responsive">
-              <img src="imagenes/digital/telefono/feed3.png" class="img-responsive">
-              <img src="imagenes/digital/telefono/feed4.png" class="img-responsive">
-              <img src="imagenes/digital/telefono/feed5.png" class="img-responsive">
-              <img src="imagenes/digital/telefono/feed6.png" class="img-responsive">
-            </div><!-- Cierra feed -->
+              <div class="lista-imagenes-digital">
+                <img src="imagenes/digital/telefono/feed1.png" class="img-responsive">
+                <img src="imagenes/digital/telefono/feed2.png" class="img-responsive">
+                <img src="imagenes/digital/telefono/feed3.png" class="img-responsive">
+                <img src="imagenes/digital/telefono/feed4.png" class="img-responsive">
+                <img src="imagenes/digital/telefono/feed5.png" class="img-responsive">
+                <img src="imagenes/digital/telefono/feed6.png" class="img-responsive">
+              </div><!-- Cierra lista-imagenes-digital --> 
+            </div><!-- Cierra imagen-digital -->
           </div><!-- Cierra col -->
 
-          <div class="col-lg-8">
-            <div class="contenido-design">
-              <img src="imagenes/digital/telefono/desing.png" class="desing img-responsive">
+          <div class="col-md-12 col-lg-6">
+            <div class="titulo-designsocialmedia">
+              <img src="imagenes/digital/telefono/desing.png" class="design img-responsive">
               <img src="imagenes/digital/telefono/carrusel-feed.png" class="img-responsive">
               <img src="imagenes/digital/telefono/social-media.png" class="social-media img-responsive ">
-            </div><!-- Cierra contenido-design -->
+            </div><!-- Cierra titulo-designsocialmedias -->
 
-            <div class="designsocialmedia">
-              <div class="row">
+            <div class="contenido">
+              <div class="row">                    
                 <div class="col-md-6 col-lg-6">
                   <p><strong>IMPACTO:</strong> Emplear recursos gráficos que sean llamativos y reconocidos por el usuario.</p>
                   <p><strong>ENGAGMENT:</strong> Direccionar la estrategia comunicacional para elevar la participación emocional del público.</p>
                   <p><strong>PUBLICITARIO:</strong> Incluir tendencias que sean atractivas y competentes con el mercado.</p>
                   <p><strong>SIMPLISTA:</strong> Menos es más</p>
                   <p><strong>PREGNANCIA:</strong> Buscar el equilibrio entre el el texto y la imagenque generen una armonía óptica.</p>
-                  <p><strong>INFORMATIVO:</strong> Ser preciso y claro en la información para vender sin errores. </p>
+                  <p><strong>INFORMATIVO:</strong> Ser preciso y claro en la información para vender sin errores. </p>                    
                 </div><!-- Cierra col -->
 
-                <div class="col-md-6 col-lg-6">
+                <div class="col-md-6">                   
                   <div class="pantallas">
-                    <img src="imagenes/digital/notebook/pantallas.png" class="desing img-responsive">
-                  </div><!-- Cierra pantallas -->
+                    <img src="imagenes/digital/notebook/pantallas.png" class="design img-responsive">
+                  </div><!-- Cierra pantallas-->
                   <div class="notebook">
-                    <img src="imagenes/digital/notebook/notebook-1.png" class="desing img-responsive">
-                  </div><!-- Cierra pantallas -->
+                    <img src="imagenes/digital/notebook/notebook-1.png" class="design img-responsive">
+                  </div><!-- Cierra notebook -->
                 </div><!-- Cierra col -->
               </div><!-- Cierra row -->
-            </div><!-- Cierra designsocialmedia -->
+            </div><!-- Cierra contenido -->
           </div><!-- Cierra col -->
         </div><!-- Cierra row -->
       </div><!-- Cierra container -->
@@ -333,7 +338,6 @@
               <img src="imagenes/catalogs/catalogo-intense/intense-4.png" class="intense-4 img-responsive">          
             </div><!-- Cierra col -->        
           </div><!-- Cierra imagenes-catalogo-intense -->
-
         </div><!-- Cierra row -->
       </div><!-- Cierra container -->
     </section>
@@ -350,9 +354,10 @@
               <img src="imagenes/catalogs/catalogo-sertfaty/FLYERsertfaty-5.png" class="FLYERsertfaty-5 img-responsive">
               <img src="imagenes/catalogs/catalogo-sertfaty/FLYERsertfaty-5.png" class="FLYERsertfaty-5 img-responsive">             
             </div><!-- Cierra imagenes-catalogo-sertfaty -->
+
             <div class="imagenes-catalogo-sertfaty2">
               <img src="imagenes/catalogs/catalogo-sertfaty/FLYERsertfaty.png" class="FLYERsertfaty img-responsive">                        
-            </div><!-- Cierra imagenes-catalogo-sertfaty -->
+            </div><!-- Cierra imagenes-catalogo-sertfaty2 -->
           </div><!-- Cierra col -->                    
         </div><!-- Cierra row -->
       </div><!-- Cierra container -->
@@ -360,61 +365,163 @@
 
     <section id="catalogo-vapes">
       <div class="container py-5">
-        <div class="row"> 
-          <div class="col-md-6">    
-            <div class="imagenes-catalogo-vapes">
-              <img src="imagenes/catalogs/catalogo-vapes/catalogovapes-1.png" class="catalogovapes-1 img-responsive">
-              <img src="imagenes/catalogs/catalogo-vapes/catalogovapes-2.png" class="catalogovapes-2 img-responsive">
-            </div><!-- Cierra imagenes-catalogo-vapes -->  
+        <div class="row">
+            <div class="col-md-6 col-lg-6">    
+              <div class="imagenes-catalogo-vapes">
+                <img src="imagenes/catalogs/catalogo-vapes/catalogovapes-1.png" class="img-responsive">
+                <img src="imagenes/catalogs/catalogo-vapes/catalogovapes-2.png" class="img-responsive">
+                <img src="imagenes/catalogs/catalogo-vapes/fondo-vapes.png" class="humo-colores img-responsive">
+              </div><!-- Cierra imagenes-catalogo-vapes -->
+            </div><!-- Cierra col -->            
 
-
-            <div class="col">
-              <div class="imagenes-catalogo-vapes2">
-                <img src="imagenes/catalogs/catalogo-vapes/catalogovapes-3.png" class="catalogovapes-3 img-responsive">
+            <div class="col-md-6 col-lg-6">
+              <div class="imagenes-catalogo-vapes-02">
+                <img src="imagenes/catalogs/catalogo-vapes/catalogovapes-3.png" class="celular-vapes img-responsive">
+                <img src="imagenes/catalogs/catalogo-vapes/catalogovapes-4.png" class="img-responsive">
+                <img src="imagenes/catalogs/catalogo-vapes/catalogovapes-5.png" class="img-responsive">
               </div><!-- Cierra imagenes-catalogo-vapes -->  
             </div><!-- Cierra col --> 
+          </div><!-- Cierra row --> 
+        </div><!-- Cierra row -->
+      </div><!-- Cierra container -->
+    </section>   
 
-          </div>
-          <div class="col-md-3">                    
-            <div class="imagenes-catalogo-vapes">
-              <img src="imagenes/catalogs/catalogo-vapes/catalogovapes-1.png" class="catalogovapes-1 img-responsive">
-              <img src="imagenes/catalogs/catalogo-vapes/catalogovapes-2.png" class="catalogovapes-2 img-responsive">
-            </div><!-- Cierra imagenes-catalogo-vapes -->  
+    <section id="analogicos">
+      <div class="container py-5">
+        <div class="col-md-8 offset-md-2">
+          <div class="titulo-analogicos">
+            <img src="imagenes/analogicos/plotting.png" class="img-responsive">
+            <img src="imagenes/analogicos/design.png" class="design img-responsive">
+          </div><!-- Cierra titulo-analogicos -->
+
+          <div class="imagen-analogicos">
+            <img src="imagenes/analogicos/fiorino-lateral-derecho.png" class="img-responsive">
+          </div><!-- Cierra imagen-analogicos -->
+        </div><!-- Cierra col -->
+
+        <div class="container px-0">
+          <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+            <div class="col">
+              <div class="plotting-design">
+                <img src="imagenes/analogicos/fiorino-lateral-izquierdo.png" class="img-responsive">
+                <img src="imagenes/analogicos/logo-digital.png" class="logo-digital img-responsive">
+              </div><!-- Cierra plotting-design -->
+            </div><!-- Cierra col -->         
+            <div class="col">           
+              <img src="imagenes/analogicos/vista-trasera-porton.png" class="img-responsive">
+              <div class="contenido">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+              </div><!-- Cierra contenido -->
+             </div><!-- Cierra col --> 
+          </div><!-- Cierra row --> 
+        </div><!-- Cierra container -->
+      </div><!-- Cierra container -->
+    </section>
+
+    <section id="aplications">
+      <div class="container pb-5">
+        <div class="col-md-8 offset-md-2">
+          <div class="titulo-3daplications">
+            <img src="imagenes/analogicos/3d.png" class="tresd img-responsive">
+            <img src="imagenes/analogicos/aplications.png" class="aplications img-responsive">
+          </div><!-- Cierra titulo-3daplications -->
+        </div><!-- Cierra col -->
+      </div><!-- Cierra container -->
+
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="imagen-3daplications">
+              <img src="imagenes/analogicos/foto-TECA.png" class="foto-teca img-responsive">
+            </div><!-- Cierra imagen-3daplications -->
+          </div><!-- Cierra col -->
+          <div class="col-md-6">
+            <div class="imagen-3daplications">
+              <img src="imagenes/analogicos/foto-GEA.png" class="foto-gea img-responsive">
+            </div><!-- Cierra imagen-3daplications -->
+          </div><!-- Cierra col -->
+        </div><!-- Cierra row -->
+      </div><!-- Cierra container -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <div class="logo-teca">
+              <img src="imagenes/analogicos/logo-TECA.png" class="img-responsive">               
+            </div><!-- Cierra logo-teca -->
           </div><!-- Cierra col -->
 
-          <div class="col-md-3">
-            <div class="imagenes-catalogo-vapes2">
-              <img src="imagenes/catalogs/catalogo-vapes/catalogovapes-3.png" class="catalogovapes-3 img-responsive">
-            </div><!-- Cierra imagenes-catalogo-vapes -->  
-          </div><!-- Cierra col -->          
-        </div><!-- Cierra row --> 
-      </div><!-- Cierra col -->
-    </div><!-- Cierra container -->
-  </section>
+          <div class="col-lg-4 col-md-4">
+            <div class="contenido">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            </div><!-- Cierra contenido -->
+          </div><!-- Cierra col -->
 
+          <div class="col-lg-4 col-md-4">
+            <div class="logo-gea">
+              <img src="imagenes/analogicos/logo-GEA.png" class="img-responsive">               
+            </div><!-- Cierra logo-gea -->
+          </div><!-- Cierra col --> 
+        </div><!-- Cierra row -->
+      </div><!-- Cierra container -->
+    </section>
+
+    <section id="prototype">
+      <div class="container">
+        <div class="col-md-8 offset-md-2">
+          <div class="titulo-prototype">            
+            <img src="imagenes/analogicos/prototype.png" class="prototype img-responsive">
+          </div><!-- Cierra titulo-prototype -->
+        </div><!-- Cierra col -->
+      </div><!-- Cierra container -->   
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="imagen-prototype">
+              <img src="imagenes/analogicos/prototype-01.png" class="imagenes-prototype img-responsive">
+            </div><!-- Cierra imagen-prototype -->
+          </div><!-- Cierra col -->
+          <div class="col-md-6">
+            <div class="imagen-prototype">
+              <img src="imagenes/analogicos/prototype-02.png" class="imagenes-prototype img-responsive">
+            </div><!-- Cierra imagen-prototype -->
+          </div><!-- Cierra col -->
+
+          <div class="col-md-6">
+            <div class="imagen-prototype">
+              <img src="imagenes/analogicos/prototype-01.png" class="imagenes-prototype img-responsive">
+            </div><!-- Cierra imagen-prototype -->
+          </div><!-- Cierra col -->
+          <div class="col-md-6">
+            <div class="imagen-prototype">
+              <img src="imagenes/analogicos/prototype-04.png" class="imagenes-prototype img-responsive">              
+            </div><!-- Cierra imagen-prototype -->
+          </div><!-- Cierra col -->
+        </div><!-- Cierra row -->
+      </div><!-- Cierra container -->
+    </section>
   </main>
-</body>
 
-<footer >
-  <div class="container">
-    <div class="d-flex flex-wrap justify-content-between align-items-center py-4">
-    
-      <div class=" col-md-4 d-flex align-items-center">
-        <a href="" class="display: flex; align-items: center; justify-content: center;">
-          <i class="bi bi-person-circle"></i>
-          <span>
-            <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> GRANDE ANET. </p>
-          </span>
-        </a>
-      </div><!-- Cierra col -->
-      <ul class="nav">
-        <li class="ms-3">
-           <a href="https://www.instagram.com/anetgrande" class="instagram"><i class="bi bi-instagram"></i></a>
-        </li>
-      </ul>
-    </div><!-- Cierra d-flex -->
+  <footer >
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-center py-4">
+        <div class=" col-md-4 d-flex align-items-center">
+          <a href="" class="display: flex; align-items: center; justify-content: center;">
+            <i class="bi bi-person-circle"></i>
+            <span>
+              <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> GRANDE ANET. </p>
+            </span>
+          </a>
+        </div><!-- Cierra col -->
+        <ul class="nav">
+          <li class="ms-3">
+            <a href="https://www.instagram.com/anetgrande" class="instagram"><i class="bi bi-instagram"></i></a>
+          </li>
+        </ul>
+      </div><!-- Cierra d-flex -->
     </div><!-- Cierra container -->
-</footer> 
+  </footer> 
 
+</body>
 </html>
-

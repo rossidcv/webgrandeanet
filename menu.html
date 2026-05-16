@@ -1,0 +1,298 @@
+<nav class="navbar navbar-expand-lg fixed-top"> 
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#inicio"> 
+            <h2>GRANDE | ANET</h2>
+            <p>PORTFOLIO</p> 
+          </a>
+        </div><!-- Cierra navbar-header -->
+
+        <ul class="nav navbar-nav m-auto">
+          <li class="nav-item"><a href="#inicio">Anet Grande</a></li>
+          <li class="nav-item"><a href="#carousel">Diseños y proyectos</a></li>
+          <li class="nav-item"><a href="#" data-toggle="collapse" data-target=".navbar-collapse">Contacto</a></li>
+        </ul>
+
+        <div class="menu-bars" id="toggle">
+          <input type="checkbox" id="btn-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div><!-- Cierra menu-bars --> 
+      </div><!-- Cierra container --> 
+    </nav>
+
+
+
+/* MENÚ 
+.header{ 
+  top: 0;
+  width: 100%; /* Para que ocupe todo el ancho */  
+  z-index: 150;
+}
+nav { 
+  background-color: #f8f8f8;  
+  color: #777;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0;
+  margin: 0;
+  border:none;
+  position: fixed;
+}
+nav ul li a {
+  font-family: "Raleway", sans-serif;  
+  font-size: 14px;
+  color:#777;
+  font-weight:600;
+  padding: 25px 15px;
+  display: block;
+  transition: 0.4s;
+}
+nav ul li a:hover {
+  color:#251653;
+}
+.navbar {
+  padding: 0;
+}
+.scrolled .navbar-brand img {
+  max-height: 20px;
+  transition: max-height 0.4s, 
+  opacity 0.3s;
+  top: 8px;
+}
+.scrolled .navbar-nav li a {
+  padding: 20px 12px;
+  font-weight: 600;
+  font-size: 12px;
+  color:#777;
+}
+.navbar-nav li a.active, 
+.navbar-nav .show > .navbar-nav li a {
+  color: #fff !important;
+  background: #6d5497 !important;
+  font-weight: bold;
+}
+.navbar-brand {
+  display: contents;
+}
+.navbar-brand h2 {
+  font-family: "Michroma", sans-serif;  
+  font-size: 15px;  
+  color: #000;  
+  text-align: center;    
+  font-style: normal;
+  margin: 0;
+}
+.navbar-brand p {
+  font-family: "Raleway", sans-serif; 
+  font-size: 9px;  
+  color: #000;  
+  text-align: right; 
+  font-style: normal; 
+  margin: 0; 
+}
+
+/*Hamburger */
+.menu-bars{
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
+}
+.menu-bars input{
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left:-5px;
+  top:-3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.menu-bars span{
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #6d5497;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+.menu-bars span:nth-child(2){
+  transform-origin: 0 0 ;
+}
+.menu-bars span:nth-child(4){
+  transform-origin: 0 100% ;
+}
+.menu-bars input:checked ~ span:nth-child(2){
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-bars input:checked ~ span:nth-child(4){
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px,0); 
+}
+.menu-bars input:checked ~ span:nth-child(3){
+  opacity: 0;
+  transform: scale(0); 
+}
+input {
+    position: absolute;
+    left: -999em;
+}
+
+@media (max-width: 980px) {
+  nav ul{
+    position:absolute;
+    right:0;
+    top:0;
+    width:100%;
+    height:100vh;
+    justify-content: space-evenly;
+    align-items: normal;
+    text-align: center;
+    background-color: #251653;
+    z-index: 1;
+    transform: translateY(-100%);
+    transition: all 1s;
+  } 
+  .navbar{  
+    padding:20px 0; 
+  }
+  .menu-bars{
+    display:flex;
+  }
+  nav ul.menudesplegable{
+    transform: translateY(0);
+    margin: 0;
+  }  
+  .navbar-nav li a { 
+    color: #fff !important;
+  }
+  .scrolled .navbar-nav li a { 
+    font-size: 16px;
+    padding: 25px 15px;
+  }
+  #carousel .parrafo {
+    width: 100%;
+  }
+  .quiensoy p,
+  .quiensoy h2 {
+    text-align: left;    
+    padding: 0 !important; 
+  }
+  .imagen .imagen-tailandia {
+    margin-top: 250px;
+  }  
+  .grupo-iconos {
+    margin-top: 180px;
+  }
+  .iconos-herramientas, 
+  .iconos-herramientas2, 
+  .iconos-herramientas3, 
+  .iconos-herramientas4 {
+    padding: 10px 0;
+  }
+  .feed {
+    margin-bottom: 80px;
+  }
+  .intense-2 {
+    top: -25px;
+  }
+  #catalogo-intense,
+  #catalogo-sertafty {
+    background-size: cover;
+    background-position:center;
+  }
+  .imagenes-catalogo-intense{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagenes-catalogo-sertfaty {
+    display: block;
+    text-align: center;
+  }
+  #catalogo-intense:before,
+  #catalogo-sertafty:before { 
+    background:rgba(250, 250, 250, 0.7);    
+  }
+  .imagenes-catalogo-sertfaty2 { 
+    right: 0;
+    left: 0;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+    top: 25px;
+    height: auto;
+  }
+  .collapse:not(.show) {
+    display: contents;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .navbar-nav li a {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+  }
+  .navbar-nav li a:hover {
+    color:#6d5497; 
+  }
+  #carousel .parrafo {
+    padding: 30px 0 0 0 !important;
+  }
+  .carousel-inner { 
+    height: auto;
+  }
+  .imagen .imagen-tailandia {
+    margin-top: 0;
+    width: 100%;
+  }
+  .grupo-iconos {
+    margin-top: 40px;
+    position: absolute;
+    width: 100%;right: 0;
+    left: 0;
+  }
+  .imagen  {
+    margin-top: 50px;
+  }
+  .notebook {
+    left: -10%;
+  }
+  .intense-2 {
+    top: -20px;
+  }  
+}
+
+
+js
+
+
+// Menú responsive //
+$(document).ready(function(){
+const menuToggle= document.querySelector(".menu-bars");
+const nav = document.querySelector("nav ul");
+
+menuToggle.addEventListener("click", () => {
+  nav.classList.toggle("menudesplegable");
+  });
+});
+
+
+
+sobra y probar 
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse.classList.contains('show')) {
+            new bootstrap.Collapse(navbarCollapse).hide();
+        }
+    });
+});
