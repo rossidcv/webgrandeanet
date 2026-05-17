@@ -275,9 +275,9 @@ video {
   margin: 0 auto;
   display: block; 
 }
-/* Caracteristicas y heramientas*/
+/* Caracteristicas y herramientas*/
 .caracteristicas {
-  padding: 15px 10px;
+  padding: 10px 15px 10px 15px;
   border-radius:30px;
   margin-right: 150px;
   border: 5px solid #0000;
@@ -320,11 +320,97 @@ video {
   display: flex;
   align-items: center;
   color: #b6b6b6;
+  padding: 10px 0;
 }
 .herramientas {
   margin-right: 150px;
 }
 
+/* Botones*/
+label {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border-radius: 100px;
+  background: linear-gradient(#6d5497,#fff);
+  color: transparent;
+  box-shadow: inset 0 0 20px rgba(109, 84, 151, 0.9),
+              inset 0 3px 5px rgba(109, 84, 151, 0.9),
+              inset 0 -3px 5px rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+label input {
+  display: none;
+}
+label span {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: -5px;  
+  border-radius: 50%;
+  background: #252525;    
+  z-index:50;
+  transition: .2s;   
+}
+label span::before {
+  content: 'OFF';
+  position: absolute;
+  font-size: 10px;
+  font-weight: 900;
+  top: 50%;
+  left: 50%;
+  background: linear-gradient(black, black) padding-box,
+              linear-gradient(to right, #76a7a4, #6d5497) border-box;
+  border-radius: 50em;
+  border: 2px solid transparent;
+  padding: 3px 1px;    
+  transform: translate(-50%, -50%);
+  color: #8f1731;
+  text-shadow: 0 0 5px #8f1731,
+               0 0 10px #8f1731;
+}
+label input:checked ~ span {
+  bottom: -15px;
+  left: 15px;
+}
+label input:checked ~ span::before {
+  content: 'ON';
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  font-size: 10px;
+  font-weight: 900;
+  top: 50%;
+  left: 50%;
+  padding: 3px;
+  background: linear-gradient(black, black) padding-box,
+            linear-gradient(to right, #76a7a4, #6d5497) border-box;
+  border-radius: 50em;    
+  transform: translate(-50%, -50%);    
+  color: #6d5497;  
+  font-weight: 600;
+  text-shadow: 0 0 5px #6d5497,
+               0 0 10px #6d5497;    
+}
+.botones {
+  display: flex;
+  position: absolute;
+  float: right;
+  right: 10px;
+  padding-right: 5px;
+}
+.sombra {
+  height: 30px;
+  width: 30px;
+  background-color: rgba(250, 250, 250, 0.2);
+  border-radius: 50%;
+  border-radius: 50%;
+  float: right;
+  position: relative;
+  top: 10px;
+  right: 5px; 
+  display: none; 
+}
 /*Iconos de herramientas*/
 .iconos {
   margin: 0 0 auto;
@@ -352,11 +438,80 @@ video {
   position: relative;
   align-self: center;
   justify-self: center;
-  padding: 15px 0;  
+  padding: 15px 0;    
 }
 .iconos-herramientas img {
-  width: 60px;
+  width: 65px;
+  transition: .2s;
+  position: relative;
+  z-index: 200;
 }
+.iconos-herramientas img:hover {
+  opacity: 0;
+}
+
+/*Porcentaje*/
+.porcentaje.izquierda,
+.porcentaje.derecha {
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  cursor: pointer;
+}
+.porcentaje.derecha {  
+  left: -30px;
+  position: relative;
+}
+.porcentaje.izquierda {  
+  left: -15px;
+  position: absolute;
+}
+.porcentaje.izquierda:hover,
+.porcentaje.derecha:hover {   
+  opacity:1;
+}
+.progress-bar {
+  height: 20px;
+  width: 95%;
+  background-color: #BFADA3;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 2px 0 10px inset rgba(0,0,0,0.2);
+  position: relative;
+  top:16px;
+}
+.bar {
+  width: 0;
+  height: 100%;
+  background-color: #6d5497;
+  
+/*Animación de fondo con degradado*/
+  background-image: linear-gradient( -45deg,
+  rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%,
+  rgba(255, 255, 255, .2) 50%, 
+  rgba(255, 255, 255, .2) 75%, transparent 75%, transparent); 
+  background-size: 30px 30px;
+  animation: move 2s linear infinite;
+  box-shadow: 2px 0 10px inset rgba(0,0,0,0.2);
+  transition: width 2s ease-out;
+}
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 30px 30px;
+  }
+}
+.perc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: bold;
+}
+
 
 /* SECCIÓN DISEÑOS Y PROYECTOS */
 #carousel {
