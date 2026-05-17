@@ -444,7 +444,7 @@ label input:checked ~ span::before {
   width: 65px;
   transition: .2s;
   position: relative;
-  z-index: 200;
+  z-index: 50;
 }
 .iconos-herramientas img:hover {
   opacity: 0;
