@@ -454,31 +454,25 @@ label input:checked ~ span::before {
 }
 .iconos-herramientas img:hover {
   opacity: 0;
+  transition: .5s;
 }
 
 /*Porcentaje*/
 .porcentaje.izquierda,
 .porcentaje.derecha {
   width: 50px;
-  height: 50px;
-  opacity: 1;
+  height: 50px;  
   cursor: pointer;
-}
-.porcentaje.derecha {  
-  position: absolute;
-  display: inline;
-}
-.porcentaje.izquierda {  
   position: absolute;
   display: inline;
   opacity: 0;
 }
-.iconos-herramientas:hover .porcentaje.izquierda {
+.bloque-iconos:hover .porcentaje.izquierda,
+.bloque-iconos:hover .porcentaje.derecha {
   opacity: 1; /* Hace que el texto aparezca */
 }
-.porcentaje.izquierda:hover,
-.porcentaje.derecha:hover {   
-  opacity:1;
+.bloque-iconos  { 
+  display: contents;
 }
 .progress-bar {
   height: 20px;
@@ -486,12 +480,9 @@ label input:checked ~ span::before {
   background-color: #BFADA3;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0px 15px 12px 0px rgba(0,41,158,0.3);
-
--webkit-box-shadow: 0px 15px 12px 0px rgba(0,41,158,0.3);
-
--moz-box-shadow: 0px 15px 12px 0px rgba(0,41,158,0.3);
+  box-shadow: 2px 0 10px inset rgba(0,0,0,0.2);
   position: relative;
+  border: 1px solid rgb(37,22,83);
   top:16px;
 }
 .bar {
