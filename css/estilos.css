@@ -275,6 +275,7 @@ video {
   margin: 0 auto;
   display: block; 
 }
+
 /* Caracteristicas y herramientas*/
 .caracteristicas {
   padding: 10px 15px 10px 15px;
@@ -346,18 +347,17 @@ label span {
   position: absolute;
   width: 30px;
   height: 30px;
-  left: 0;
   top: -5px;  
+  left: 0;
   border-radius: 50%;
   background: #252525;    
-  z-index:50;
   transition: .2s;   
 }
 label span::before {
   content: 'OFF';
   position: absolute;
   font-size: 10px;
-  font-weight: 900;
+  font-weight: 600;
   top: 50%;
   left: 50%;
   background: linear-gradient(black, black) padding-box,
@@ -411,6 +411,7 @@ label input:checked ~ span::before {
   right: 5px; 
   display: none; 
 }
+
 /*Iconos de herramientas*/
 .iconos {
   margin: 0 0 auto;
@@ -459,12 +460,12 @@ label input:checked ~ span::before {
   cursor: pointer;
 }
 .porcentaje.derecha {  
-  left: -30px;
-  position: relative;
+  position: absolute;
+  display: inline;
 }
 .porcentaje.izquierda {  
-  left: -15px;
   position: absolute;
+  display: inline;
 }
 .porcentaje.izquierda:hover,
 .porcentaje.derecha:hover {   
@@ -511,7 +512,6 @@ label input:checked ~ span::before {
   color: #fff;
   font-weight: bold;
 }
-
 
 /* SECCIÓN DISEÑOS Y PROYECTOS */
 #carousel {
