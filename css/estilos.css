@@ -766,8 +766,8 @@ label input:checked ~ span::before {
 
 /*CATÁLOGO SERTFATY*/
 #catalogo-sertafty {   
-  background-image: url(../imagenes/catalogs/catalogo-sertfaty/catalogosertfaty.png);
-  background-size: contain;
+  background-image: url(../imagenes/catalogs/catalogo-sertfaty/Fondo-LeandroSertfaty.png);
+  background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
   position: relative;
@@ -955,14 +955,13 @@ label input:checked ~ span::before {
   overflow: hidden;  
   z-index: 10;
 }
-
 .work {
   background-color: grey;
-  border-radius: 55px;
+  border-radius: 100px;
   width: 100%;
   padding: 20px;
 }
-.contenido-video2 .work p {
+.contenido-video-work .work p {
   font-family: "Raleway", sans-serif;
   font-size: 12px !important;
   color: #fff !important;
@@ -973,13 +972,14 @@ label input:checked ~ span::before {
   align-items: center;
 }
 .work h2 {
-  font-family: 'Cambai Minimalist', sans-serif;
+  font-family: "Raleway", sans-serif; 
   font-size: 20px;
   color: #fff;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0;
 }
 .work .botones-work {
   height: 100%;
@@ -990,84 +990,9 @@ label input:checked ~ span::before {
 .work .botones {  
   display: contents;
 }
-.titulo-work-arrangement img{
+#work-arrangement .titulo-work-arrangement img{
   width: 100%;
 }
-
-/* VIDEO INICIO */
-.contenedor-video {
-  position: relative;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100vh;  /*Altura completa de la pantalla */
-  overflow: hidden;  
-  z-index: 10;
-}
-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -10;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-}
-.contenido-video {
-  display: block;
-  height: 100%;
-  width: max-content;
-  margin: 0 auto;
-}
-.contenido-video a {
-  display: block;
-  position: relative;
-  top: 50%;
-}
-.contenido-video h1{
-  font-family: 'Michroma';
-  font-size:36px;
-  font-style: normal;
-  color: #fff;
-  transition: 0.4s;
-  top: 50%;
-  display: flex;
-  margin: 0 auto;  
-}
-.contenido-video h1:hover {
-  color: #aaa8ac;
-}
-.contenido-video p {
-  font-family: "Raleway", sans-serif;
-  font-size:15px;
-  color:#fff;
-  font-weight: 500;
-  letter-spacing: 2px;
-  font-style: normal;  
-  margin: 0 auto;
-  transition: 0.4s;
-  display: flex;
-  justify-content: end;
-  align-items: self-end;
-}
-.contenido-video h1 hr {
-  border: 1px solid #fff;
-  height: 45px;
-  margin: 0 20px;
-  display: flex;
-  transition: 0.4s;
-  opacity: 1;
-}
-
-
-
-
-
-
-
 
 /*FOOTER*/
 footer {
@@ -1170,6 +1095,9 @@ footer p{
     top: 25px;
     height: auto;
     margin-bottom: 25px;
+  }
+  .work {
+    border-radius: 100px !important;
   }
 }
 
@@ -1320,7 +1248,16 @@ footer p{
   }
   .caracteristicas {
     margin-top: 40px;
-  }
+  }  
+  .work p {
+    border-left:none;
+    padding: 15px 0;
+    text-align: center;
+  } 
+
+  .botones-work {
+    padding-top: 10px;
+  } 
 } 
 
 @media (max-width: 600px) {    
@@ -1332,6 +1269,6 @@ footer p{
   }
   .iconos {
     margin-top: 0;
-  }  
+  } 
 }
   
