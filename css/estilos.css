@@ -5,6 +5,7 @@
     font-weight: normal;
     font-style: normal;
 }
+@import url('https://googleapis.com');
 body {
   margin: 0;
   padding: 0;
@@ -237,11 +238,16 @@ video {
   background-repeat: no-repeat;
 }
 .contenido p {
-  font-family: "Raleway", sans-serif;
-  font-size: 12px;
+  font-family: 'D-DIN', sans-serif; 
+  font-size: 13px;
   line-height: 21px;
+  letter-spacing: 0.5px;
   text-align: right;
   color: #fff;
+  font-weight: lighter;
+}
+.contenido p strong {
+  font-weight: bold;
 }
 .contenido p:last-child {
   margin-bottom: 0;
@@ -482,7 +488,7 @@ label input:checked ~ span::before {
   overflow: hidden;
   box-shadow: 2px 0 10px inset rgba(0,0,0,0.2);
   position: relative;
-  border: 1px solid rgb(250,250,250,0.5);
+  border: 1px solid rgb(250,250,250,1);
   top:16px;
 }
 .bar {
@@ -527,6 +533,9 @@ label input:checked ~ span::before {
   background-position: left; 
   background-repeat: no-repeat;
 }
+#carousel h2 {
+  display: none;
+}
 .carousel-indicators [data-bs-target] {
   background-color:#fff;
   width: 8px;
@@ -556,8 +565,10 @@ label input:checked ~ span::before {
   object-position: center; /* Centra el encuadre de la imagen */
 }
 #carousel .contenido p{
-  font-family: "Raleway", sans-serif;
-  font-size: 12px;
+  font-family: 'D-DIN', sans-serif; 
+  font-size: 13px;
+  letter-spacing: 0.5px;  
+  font-weight: lighter;
   color: #fff;
   width: 70%;
   margin: 0 auto;
@@ -568,9 +579,7 @@ label input:checked ~ span::before {
 .carousel-caption {
   height: 100%;
   width: 100%;
-  display: table;
-  -webkit-box-pack: center;
-  -webkit-box-align: center;
+  display: table;  
   position: absolute;
   right: 50%;
   left: 0%;
@@ -652,6 +661,9 @@ label input:checked ~ span::before {
 }
 
 /* SECCIÓN DESIGN SOCIAL MEDIA */
+#imagen-digital {
+  display:none
+}
 .imagen-digital {
   position: relative;
   top: -10px;
@@ -742,6 +754,9 @@ label input:checked ~ span::before {
   display: inline-block; 
   margin: 2% 1%; 
 }
+#catalogo-intense h2 {
+  display: none;
+}
 .intense-1 {
   width: 35%;
 }
@@ -785,6 +800,9 @@ label input:checked ~ span::before {
   top: 0;
   bottom: 0;
 }
+#catalogo-serfaty h2 {
+  display: none;
+}
 .FLYERserfaty {
   width: 55%;
   box-shadow: 10px 10px 4px 0px rgba(29, 29, 27, 0.75);
@@ -824,6 +842,9 @@ label input:checked ~ span::before {
 /*CATÁLOGO VAPES*/
 #catalogo-vapes {
   position: relative;
+}
+#catalogo-vapes h2 {
+  display: none;
 }
 .imagenes-catalogo-vapes,
 .imagenes-catalogo-vapes-02 {
@@ -874,6 +895,9 @@ label input:checked ~ span::before {
   position: relative;
   top: 5px;
 }
+#analogicos h2 {
+  display: none;
+}
 #analogicos img {
   width: 100% !important;
 }
@@ -913,6 +937,9 @@ label input:checked ~ span::before {
   width: 100% !important;
   display: block; 
   margin: 0 auto;  
+}
+#aplications h2 {
+  display: none;
 }
 .logo-teca img, 
 .logo-gea img{
@@ -970,7 +997,7 @@ label input:checked ~ span::before {
   top: 60px;  
 }
 .logo-SKETCHUP { 
-  width: 80%;
+  width: 70%;
   display: block;
   float: right;
 }
@@ -982,8 +1009,10 @@ label input:checked ~ span::before {
   margin-bottom: -60px;
 }
 #prototype .contenido p {
-  font-family: "Raleway", sans-serif;
-  font-size: 12px !important;
+  font-family: 'D-DIN', sans-serif; 
+  font-size: 13px;
+  letter-spacing: 0.5px;  
+  font-weight: lighter;
   color: #000 !important;
   margin-bottom: 0;
   height: 100%;
@@ -991,7 +1020,9 @@ label input:checked ~ span::before {
   justify-content: center;
   align-items: center;
 }
-
+#prototype h2 {
+  display: none;
+}
 /*SECCIÓN WORK ARRANGEMENT */
 #work-arrangement .contenedor-video {
   position: relative;
@@ -1009,8 +1040,10 @@ label input:checked ~ span::before {
   padding: 20px;
 }
 .contenido-video-work .work p {
-  font-family: "Raleway", sans-serif;
-  font-size: 12px !important;
+  font-family: 'D-DIN', sans-serif; 
+  font-size: 13px;
+  letter-spacing: 0.5px;  
+  font-weight: lighter;
   color: #fff !important;
   margin-bottom: 0;
   height: 100%;
@@ -1080,15 +1113,11 @@ footer a {
   align-items: center; /* Centrado vertical */
   justify-content: center;
 }
-footer p{
+footer span{
   color: #fff;
   font-size: 12px;
   display: inline;
 }
-
-
-
-
 
 
 /* =========== Media Queries =========== */
@@ -1174,6 +1203,10 @@ footer p{
   #prototype .contenido {
     width: 70%;
     top: 0px;
+  }
+  .caracteristicas h2,
+  .work h2 {
+    font-size: 16px;
   }
 }
 
@@ -1379,5 +1412,8 @@ footer p{
   .humo-colores {
     top: 35px;
     left: 30px;
+  }
+  .notebook {
+    left: -5%;
   }
 }  
