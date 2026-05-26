@@ -239,7 +239,7 @@ video {
 }
 .contenido p {
   font-family: 'D-DIN', sans-serif; 
-  font-size: 13px;
+  font-size: 12px;
   line-height: 21px;
   letter-spacing: 0.5px;
   text-align: right;
@@ -309,16 +309,14 @@ video {
 .caracteristicas li {
   padding:3px 0;
 }
-.caracteristicas h2 {
+.caracteristicas h3 {
   font-family: 'Cambai Minimalist', sans-serif;  
   font-size: 20px;
   color: #fff;
   letter-spacing: 2px;
   font-weight: 600;
-  margin: 0  auto 0 0;  
-}
-.caracteristicas h2 {
   text-align: left;
+  margin: 0  auto 0 0;  
 }
 .caracteristicas img {
   width: 15%;
@@ -566,7 +564,7 @@ label input:checked ~ span::before {
 }
 #carousel .contenido p{
   font-family: 'D-DIN', sans-serif; 
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 0.5px;  
   font-weight: lighter;
   color: #fff;
@@ -1010,7 +1008,7 @@ label input:checked ~ span::before {
 }
 #prototype .contenido p {
   font-family: 'D-DIN', sans-serif; 
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 0.5px;  
   font-weight: lighter;
   color: #000 !important;
@@ -1041,7 +1039,7 @@ label input:checked ~ span::before {
 }
 .contenido-video-work .work p {
   font-family: 'D-DIN', sans-serif; 
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 0.5px;  
   font-weight: lighter;
   color: #fff !important;
@@ -1051,7 +1049,7 @@ label input:checked ~ span::before {
   justify-content: center;
   align-items: center;
 }
-.work h2 {
+.work h3 {
   font-family: 'Cambai Minimalist', sans-serif;  
   font-size: 20px;
   color: #fff;
@@ -1204,8 +1202,8 @@ footer span{
     width: 70%;
     top: 0px;
   }
-  .caracteristicas h2,
-  .work h2 {
+  .caracteristicas h3,
+  .work h3 {
     font-size: 16px;
   }
 }
@@ -1379,7 +1377,7 @@ footer span{
     margin: 0 auto;
     width: 100% !important;  
   }
-  #prototype .contenido p{
+  #prototype .contenido p {
     text-align: center;  
   }
   .logo-SKETCHUP {
