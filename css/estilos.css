@@ -1081,6 +1081,8 @@ label input:checked ~ span::before {
   justify-content: center;
   align-items: center;
   margin-bottom: 0;
+  border-right: 2px solid #fff;
+  padding-right: 25px;
 }
 .work .botones-work {
   height: 100%;
