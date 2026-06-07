@@ -752,6 +752,18 @@ label input:checked ~ span::before {
   display: inline-block; 
   margin: 2% 1%; 
 }
+.intense-1,
+.intense-2,
+.intense-3,
+.intense-4 {
+  transition: transform 0.3s ease;
+}
+.intense-1:hover,
+.intense-2:hover,
+.intense-3:hover,
+.intense-4:hover {
+  transform: scale(1.1); 
+}
 #catalogo-intense h2 {
   display: none;
 }
@@ -780,7 +792,7 @@ label input:checked ~ span::before {
 
 /*CATÁLOGO SERFATY*/
 #catalogo-serfaty {   
-  background-image: url(../imagenes/catalogs/catalogo-serfaty/Fondo-LeandroSerfaty.png);
+  background-image: url(../imagenes/catalogs/catalogo-serfaty/Fondo-LeandroSertfaty.png);
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -817,6 +829,15 @@ label input:checked ~ span::before {
   margin: 1%; 
   display: inline-block; 
   position: relative;
+  transition: transform 0.3s ease;
+}
+.FLYERserfaty-1:hover,
+.FLYERserfaty-2:hover,
+.FLYERserfaty-3:hover,
+.FLYERserfaty-4:hover,
+.FLYERserfaty-5:hover,
+.FLYERserfaty-6:hover {
+  transform: scale(1.1); 
 }
 .FLYERserfaty-7 {
   width: 70%;
