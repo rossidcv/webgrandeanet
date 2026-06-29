@@ -1119,6 +1119,34 @@ label input:checked ~ span::before {
   padding: 7px;
 }
 
+/*SECCIÓN VIDEOS */
+#videos img {
+  width: 100%;
+}
+#videos img.telefono-01 {
+  padding-top: 18px;
+}
+#videos img.telefono-02 {
+  padding-top: 65px;
+  width: 85% !important;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  left: 30px;
+}
+#videos img.telefono-03 {
+  width: 85% !important;
+  float: right;
+}
+#videos img.telefono-04 {
+  width: 85% !important;
+  position: relative;
+  top: -50px;
+  right: 0;
+  float: right;
+  margin-bottom: -50px;
+}
+
 /*FOOTER*/
 footer {
   background-color: #251653;
@@ -1231,6 +1259,11 @@ footer span{
   .caracteristicas h3,
   .work h3 {
     font-size: 16px;
+  }
+  #videos img.telefono-04 {
+    width: 100% !important;
+    top: 0;
+    margin-bottom:0;
   }
 }
 
@@ -1411,6 +1444,20 @@ footer span{
     left: 0%;
     margin: 0 auto;
     float: none;
+  }
+  #videos img.telefono-02 {
+    left: 10px;
+    right: 10px;
+  }
+  #videos img.telefono-03 {
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+  #videos img {
+    position: relative;
+    left: 10px;
+    right: 10px;
   }
 } 
 
