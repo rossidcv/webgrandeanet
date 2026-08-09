@@ -1149,6 +1149,7 @@ label input:checked ~ span::before {
   justify-content: end;
   align-items: self-start;
 }
+
 .swiper-slide-active {
   filter: blur(0px);
 }
