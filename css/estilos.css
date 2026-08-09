@@ -6,6 +6,19 @@
     font-style: normal;
 }
 @import url('https://googleapis.com');
+
+@font-face {
+  font-family: 'RadiateSansBold';
+  src: url('../fuentes/RadiateSansBold.woff2') format('woff2'),
+  url('./fuentes/.ttf') format('woff2');
+  font-style: normal;
+  font-weight: 300;
+}
+
+h5 {
+  font-family: 'RadiateSansBold', sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -168,7 +181,8 @@ a:hover,
   overflow: hidden;  
   z-index: 10;
 }
-video {
+#inicio video,
+#work-arrangement video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -955,7 +969,9 @@ label input:checked ~ span::before {
   margin: 0 auto;  
 }
 .titulo-3daplications .aplications,
-.titulo-prototype .prototype {
+.titulo-prototype .prototype,
+.titulo-videos .videos,
+.titulo-animation .animation {
   width: 100% !important;
   display: block; 
   margin: 0 auto;  
@@ -1119,33 +1135,74 @@ label input:checked ~ span::before {
   padding: 7px;
 }
 
-/*SECCIÓN VIDEOS */
-#videos img {
+.swiper {
   width: 100%;
+  padding-bottom: 35px;
 }
-#videos img.telefono-01 {
-  padding-top: 18px;
+.swiper-slide {
+  width: 300px;
+  height: auto;
+  filter: blur(1px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
 }
-#videos img.telefono-02 {
-  padding-top: 65px;
-  width: 85% !important;
+.swiper-slide-active {
+  filter: blur(0px);
+}
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #6d5497;
+}
+.swiper-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-bullets.swiper-pagination-horizontal, 
+.swiper-pagination-custom, 
+.swiper-pagination-fraction {
+  bottom:15px;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+.video  {
+  width:50%;
   margin: 0 auto;
-  display: block;
-  position: relative;
-  left: 30px;
 }
-#videos img.telefono-03 {
-  width: 85% !important;
-  float: right;
+
+/*logos*/
+.slider {
+  background: #ffffff;
+  height: 100px;
+  width: ;
+  overflow: hidden;
 }
-#videos img.telefono-04 {
-  width: 85% !important;
-  position: relative;
-  top: -50px;
-  right: 0;
-  float: right;
-  margin-bottom: -50px;
+.slider .move {
+  display: flex;
+  width: calc(250px * 14);
+  animation: animacion 50s linear infinite;
 }
+.slider .box {
+  height: 100px;
+}
+.slider img{  
+  height: 100px;
+  transition: transform 0.3s ease;
+}
+.slider img:hover {
+  transform: scale(1.2);
+}
+@keyframes animacion {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
 
 /*FOOTER*/
 footer {
@@ -1186,6 +1243,9 @@ footer span{
   #prototype .contenido {
     top: -20px;
     margin-bottom: -20px;
+  }  
+  .herramientas {
+    margin-right:0;
   }
 }
 
@@ -1259,6 +1319,9 @@ footer span{
   .caracteristicas h3,
   .work h3 {
     font-size: 16px;
+  }
+  .work h3 {
+    border-right:2px solid transparent;
   }
   #videos img.telefono-04 {
     width: 100% !important;
@@ -1458,7 +1521,7 @@ footer span{
     position: relative;
     left: 10px;
     right: 10px;
-  }
+  }  
 } 
 
 @media (max-width: 600px) {    
