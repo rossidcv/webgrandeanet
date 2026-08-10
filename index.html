@@ -14,6 +14,7 @@
     <link href="https://fonts.cdnfonts.com/css/cambai-minimalist" rel="stylesheet">
     <link href="https://db.onlinewebfonts.com/c/6fa591daa0aa2d0f845653486954aca5?family=Akira+Expanded" rel="stylesheet">
 
+
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -55,9 +56,19 @@
               <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"><a class="nav-link" href="#">Contacto</a></li> 
             </ul>
           </div><!-- Cierra menu -->  
-        </div><!-- Cierra collapse -->  
+        </div><!-- Cierra collapse -->
+
+        <div class="idiomas"> 
+          <select id="lang-selector"> 
+              <option class="espanol" value="esp">Español</option> 
+              <option class="ingles" value="eng">English</option>
+              <option class="Italiano" value="ita">Italiano</option> 
+          </select> 
+        </div> <!-- Cierra idiomas -->  
       </div><!-- Cierra container -->  
     </nav>
+
+   
 
     <main>
       <section class="inicio" id="inicio">
@@ -67,7 +78,7 @@
           <div class="contenido-video">
             <a href="index.html">
               <h1 class="titulo">GRANDE <hr> ANET</h1>
-              <p>PORTFOLIO</p>
+              <p>PORTFOLIO</p> 
             </a>
           </div><!-- Cierra contenido-video -->  
         </div><!-- Cierra contenedor-video --> 
@@ -83,11 +94,28 @@
 
               <div class="col-md-6">
                 <div class="recorrido">
-                  <h2 class="pl-5">RECORRIDO</h2>
-                  <p class="pl-5">Soy Anabel Grande diseñadora grafica y licenciada en turismo, busco por el mundo tendencias gráficas reales adaptadas a cada cultura humana que sean de aporte en cada trabajo y proyecto con el fin de mejorar la comunicación visual y funcional para cada cliente. </p>
-                  <p class="pl-5">Cada lugar nuevo es parte de un descubrimiento que activa la creatividad para jugar con la incertidumbre de resolver nuevos escenarios. Aficionada por la iconografía y simbolismos que marcan un impacto en la comunicación en pocos trazos.</p>         
-                  <h2 class="pl-5">SECTORES</h2>
-                  <p class="pl-5  mb-0"> Trabajé en proyectos gráficos con empresas tecnológicas, de salud y estética, comunicación entre otros, pero siempre bajo mi modalidad poder asesorar al cliente para darle un resultado visual y comunicacional de excelencia.</p>
+
+                  <!-- Español -->
+                  <h2 class="pl-5 esp">RECORRIDO</h2>
+                  <p class="pl-5 esp">Soy Anabel Grande diseñadora grafica y licenciada en turismo, busco por el mundo tendencias gráficas reales adaptadas a cada cultura humana que sean de aporte en cada trabajo y proyecto con el fin de mejorar la comunicación visual y funcional para cada cliente. </p>
+                  <p class="pl-5 esp">Cada lugar nuevo es parte de un descubrimiento que activa la creatividad para jugar con la incertidumbre de resolver nuevos escenarios. Aficionada por la iconografía y simbolismos que marcan un impacto en la comunicación en pocos trazos.</p>         
+                  <h2 class="pl-5 esp">SECTORES</h2>
+                  <p class="pl-5  mb-0 esp"> Trabajé en proyectos gráficos con empresas tecnológicas, de salud y estética, comunicación entre otros, pero siempre bajo mi modalidad poder asesorar al cliente para darle un resultado visual y comunicacional de excelencia.</p>
+
+                  <!-- Inglés -->
+                  <h2 class="pl-5 eng">THE ROUTE </h2>
+                  <p class="pl-5 eng">I'm Anabel Grande, a graphic designer with a degree in tourism. I travel the world searching for authentic graphic trends adapted to each culture, contributing to every project and improving visual and functional communication for my clients. </p>
+                  <p class="pl-5 eng">Each new destination is an opportunity for discovery that sparks creativity and invites me to explore new scenarios. I'm passionate about iconography and symbolism, which can make a powerful impact on communication with just a few strokes.</p>         
+                  <h2 class="pl-5 eng">SECTORS</h2>
+                  <p class="pl-5  mb-0 eng"> I worked on graphic design projects with technology, health and beauty companies, communications companies, among others, but always under my modality of being able to advise the client to give them a visual and communicational result of excellence</p>
+
+                  <!-- Italiano -->
+                  <h2 class="pl-5 ita">PERCORSO</h2>
+                  <p class="pl-5 ita">Sono Anabel Grande, graphic designer e laureata in turismo. Viaggio per il mondo alla ricerca di tendenze visive autentiche, adattate a ogni cultura, con l’obiettivo di migliorare la comunicazione grafica e funzionale in ogni progetto che realizzo per i miei clienti. </p>
+                  <p class="pl-5 ita">Ogni nuova destinazione è un’occasione di scoperta che stimola la creatività e mi invita a risolvere scenari inediti. Sono appassionata di iconografia e simbolismi capaci di trasmettere un messaggio chiaro e incisivo con pochi tratti.</p>         
+                  <h2 class="pl-5 ita">SETTORI</h2>
+                  <p class="pl-5  mb-0 ita"> Ho lavorato a progetti grafici per aziende tecnologiche, sanitarie ed estetiche, di comunicazione e di altri settori. In ogni caso, il mio approccio è quello di consigliare il cliente per ottenere un risultato visivo e comunicativo di eccellenza.</p>
+
                 </div><!-- Cierra recorrido --> 
               </div><!-- Cierra col-md-6 -->
             </div><!-- Cierra row -->
@@ -99,7 +127,8 @@
                 <div class="caracteristicas">                
                   <ul class="lista-caracteristicas">
                     <li>
-                      <h3>ESENCIA</h3>
+                      <h3 class="esp">ESENCIA</h3>
+                      <h3 class="eng">ESENCIA</h3>
                       <div class="botones">
                         <label >
                           <input type="checkbox" checked>
@@ -110,7 +139,8 @@
                       </div><!-- Cierra sombra -->
                     </li>
                     <li>
-                      <h3>ARMONIA</h3>
+                      <h3 class="esp">ARMONIA</h3>
+                      <h3 class="eng">HARMONY</h3>
                       <div class="botones">
                         <label >
                           <input type="checkbox" checked>
@@ -121,7 +151,8 @@
                       </div><!-- Cierra sombra -->
                     </li>
                     <li>
-                      <h3>CRITERIO</h3>
+                      <h3 class="esp">CRITERIO</h3>
+                      <h3 class="eng">CRITERION</h3>
                       <div class="botones">
                         <label >
                           <input type="checkbox" checked>
@@ -132,7 +163,8 @@
                       </div><!-- Cierra sombra -->
                     </li>
                     <li>
-                      <h3>SIMPLEZA</h3>
+                      <h3 class="esp">SIMPLEZA</h3>
+                      <h3 class="eng">SIMPLICITY</h3>
                       <div class="botones">
                         <label >
                           <input type="checkbox" checked>
@@ -143,7 +175,8 @@
                       </div><!-- Cierra sombra -->
                     </li>
                     <li>
-                      <h3>SOBRIEDAD</h3>
+                      <h3 class="esp">SOBRIEDAD</h3>
+                      <h3 class="eng">SOBRIEDAD</h3>
                       <div class="botones">
                         <label >
                           <input type="checkbox" checked>
@@ -154,7 +187,8 @@
                       </div><!-- Cierra sombra -->
                     </li>
                     <li>
-                      <h3>ELEGANCIA</h3>
+                      <h3 class="esp">ELEGANCIA</h3>
+                      <h3 class="eng">ELEGANCY</h3>
                       <div class="botones">
                         <label >
                           <input type="checkbox" checked>
@@ -168,9 +202,21 @@
                 </div><!-- Cierra caracteristicas -->
 
                 <div class="herramientas pt-5">
-                  <h2 style="text-align: left;">HERRAMIENTAS</h2>
-                  <p style="text-align: left;">En constante aprendizaje y actualización de las herramientas más importantes para el desarrollo del diseño gráfico. Tengo más de 4 años de experiencia diseñando con AI, PS, para diseño de folletos, flyers y piezas gráficas para redes sociales. Me fascina trabajar con AE para animación de videos institucionales, publicitarios y reels.</p>
-                  <p style="text-align: left;">Actualmente me enfoco en nuevos conocimientos y desafios en diseño web, programación y bases de datos.</p>
+                  <!-- Español -->
+                  <h2 class="esp" style="text-align: left;">HERRAMIENTAS</h2>
+                  <p class="esp" style="text-align: left;">En constante aprendizaje y actualización de las herramientas más importantes para el desarrollo del diseño gráfico. Tengo más de 4 años de experiencia diseñando con AI, PS, para diseño de folletos, flyers y piezas gráficas para redes sociales. Me fascina trabajar con AE para animación de videos institucionales, publicitarios y reels.</p>
+                  <p class="esp" style="text-align: left;">Actualmente me enfoco en nuevos conocimientos y desafios en diseño web, programación y bases de datos.</p>
+
+                  <!-- Inglés -->
+                  <h2 class="eng" style="text-align: left;">TOOLS</h2>
+                  <p class="eng"style="text-align: left;"> I am constantly learning and updating my skills on the main graphic design tools. I have over four years of experience with Illustrator (AI) and Photoshop (PS) creating brochures, yers, and graphic content for social media. I love working with After Eects (AE) for animations for corporate videos, advertising, and reels. </p>
+                  <p class="eng" style="text-align: left;">I am currently focusing on expanding my skills in web design, programming, and databases.</p>
+
+                  <!-- Italiano -->
+                  <h2 class="ita" style="text-align: left;">STRUMENTI</h2> 
+                  <p class="ita"style="text-align: left;">Sono in costante apprendimento e aggiornamento sugli strumenti principali del design grafico. </p>
+                  <p class="ita" style="text-align: left;">Ho più di quattro anni di esperienza con Illustrator (AI) e Photoshop (PS) nella creazione di brochure, flyer e contenuti grafici per i social media. Amo lavorare con After Effects (AE) per animazioni di video istituzionali, pubblicitari e reels. </p>
+                  <p class="ita" style="text-align: left;">Attualmente mi concentro sull’ampliamento delle mie competenze in web design, programmazione e basi di dati.</p>
                 </div><!-- Cierra herramientas -->
               </div><!-- Cierra col-md-6 -->
 
@@ -351,8 +397,14 @@
 
           <div class="contenido py-5">
             <div class="container text-center">
-              <div class="row">    
-                <p class="px-5 mb-0 border-top" style="text-align:center">Para cada proyecto me gusta escuchar al cliente con detenimiento para detectar la esencia que quiere reflejar, eso me permite delinear el diseño preciso entre los requerimientos y la inspiración que recreo en mi mente que se enfoca en simplicar la idea con estilo y eficiencia en la comunicación para el usuario.</p>
+              <div class="row"> 
+              <!-- Español -->   
+                <p class="px-5 mb-0 border-top esp" style="text-align:center">Para cada proyecto me gusta escuchar al cliente con detenimiento para detectar la esencia que quiere reflejar, eso me permite delinear el diseño preciso entre los requerimientos y la inspiración que recreo en mi mente que se enfoca en simplicar la idea con estilo y eficiencia en la comunicación para el usuario.</p>
+              <!-- Inglés -->   
+                <p class="px-5 mb-0 border-top eng" style="text-align:center">For each project I listen carefully to the client to capture the essence that they want to reflect, which allows me to outline the precise design within the requirements and the inspiration that I create in my mind that focuses on simplifying the idea with style and efficiency in communication for the user.</p>
+              <!-- Italiano -->   
+                <p class="px-5 mb-0 border-top ita" style="text-align:center">In ogni progetto ascolto con attenzione il cliente per cogliere l’essenza di ciò che desidera comunicare. Questa fase mi permette di delineare un design preciso che bilanci requisiti e ispirazione, semplificando l’idea con stile ed efficienza comunicativa.</p>
+
               </div><!-- Cierra row -->
             </div><!-- Cierra container -->
           </div><!-- Cierra carousel --> 
@@ -367,7 +419,9 @@
                 </div><!-- Cierra face front -->
                 <div class="face back">              
                   <div class="link">
-                    <a class="btn" href="#digital" role="button">Ver más</a>
+                    <a class="btn esp" href="#digital" role="button">Ver más</a>
+                    <a class="btn eng" href="#digital" role="button">See more</a>
+                    <a class="btn ita" href="#digital" role="button">Vedi altro</a>
                   </div><!-- Cierra link -->
                 </div><!-- Cierra face back -->
               </div><!-- Cierra card -->
@@ -378,7 +432,9 @@
                 </div><!-- Cierra face front -->
                 <div class="face back">
                   <div class="link">
-                    <a class="btn" href="#analogicos" role="button">Ver más</a>
+                    <a class="btn esp" href="#analogicos" role="button">Ver más</a>
+                     <a class="btn eng" href="#analogicos" role="button">See more</a>
+                     <a class="btn ita" href="#analogicos" role="button">Vedi altro</a>
                   </div><!-- Cierra link -->
                 </div><!-- Cierra face back -->
               </div><!-- Cierra card -->
@@ -389,7 +445,9 @@
                 </div><!-- Cierra face front -->
                 <div class="face back">
                   <div class="link">
-                    <a class="btn" href="#catalogo-intense" role="button">Ver más</a>
+                    <a class="btn esp" href="#catalogo-intense" role="button">Ver más</a>
+                    <a class="btn eng" href="#catalogo-intense" role="button">See more</a>
+                    <a class="btn ita" href="#catalogo-intense" role="button">Vedi altro</a>
                   </div><!-- Cierra link -->
                 </div><!-- Cierra face back -->
               </div><!-- Cierra card -->
@@ -400,7 +458,9 @@
                 </div><!-- Cierra face front -->
                 <div class="face back">
                   <div class="link">
-                    <a class="btn" href="#" role="button">Ver más</a>
+                    <a class="btn esp" href="#" role="button">Ver más</a>
+                    <a class="btn eng" href="#" role="button">See more</a>
+                    <a class="btn ita" href="#" role="button">Vedi altro</a>
                   </div><!-- Cierra link -->
                 </div><!-- Cierra face back -->
               </div><!-- Cierra card -->
@@ -411,7 +471,9 @@
                 </div><!-- Cierra face front -->
                 <div class="face back">
                   <div class="link">
-                    <a class="btn" href="https://docs.google.com/presentation/d/1MDThT1_RZWPEyJmTY6EuQ5iDhiLMd-_xkFGOZFDzumM/edit?usp=sharing" target="_blank" role="button">Ver más</a>
+                    <a class="btn esp" href="https://docs.google.com/presentation/d/1MDThT1_RZWPEyJmTY6EuQ5iDhiLMd-_xkFGOZFDzumM/edit?usp=sharing" target="_blank" role="button">Ver más</a>
+                    <a class="btn eng" href="https://docs.google.com/presentation/d/1MDThT1_RZWPEyJmTY6EuQ5iDhiLMd-_xkFGOZFDzumM/edit?usp=sharing" target="_blank" role="button">See more</a>
+                    <a class="btn ita" href="https://docs.google.com/presentation/d/1MDThT1_RZWPEyJmTY6EuQ5iDhiLMd-_xkFGOZFDzumM/edit?usp=sharing" target="_blank" role="button">Vedi altro</a>
                   </div><!-- Cierra link -->
                 </div><!-- Cierra face back -->
               </div><!-- Cierra card -->
@@ -425,7 +487,9 @@
           <div class="row">
             <div class="col-md-12 col-lg-6">
               <div class="imagen-digital"> 
-              <h2>Digital</h2>               
+              <h2 class="esp">Digital</h2>
+              <h2 class="eng">Digital</h2>   
+              <h2 class="ita">Digitale</h2>              
                 <img src="imagenes/digital/telefono/cel.png" alt="Digital" class="img-responsive">             
 
                 <div class="lista-imagenes-digital">
@@ -449,17 +513,41 @@
               <div class="contenido">
                 <div class="row">                    
                   <div class="col-md-6 col-lg-6">
-                    <p><strong>IMPACTO:</strong> Emplear recursos gráficos que sean llamativos y reconocidos por el usuario.</p>
+                    <!-- Español -->
+                    <p class="esp"><strong>IMPACTO:</strong> Emplear recursos gráficos que sean llamativos y reconocidos por el usuario.</p>
+                    <p class="eng"><strong>IMPACT:</strong> Use eye-catching and easily recognizable graphic resources.</p>
+                    <p class="ita"><strong>IMPATTO:</strong> Utilizza risorse grafiche accattivanti e facilmente riconoscibili.</p>
+
                     <br>
-                    <p><strong>ENGAGMENT:</strong> Direccionar la estrategia comunicacional para elevar la participación emocional del público.</p>
+
+                    <p class="esp"><strong>ENGAGMENT:</strong> Direccionar la estrategia comunicacional para elevar la participación emocional del público.</p>
+                    <p class="eng"><strong>ENGAGEMENT:</strong> Direct the communication strategy to increase the audience's emotional engagement.</p>
+                    <p class="ita"><strong>COINVOLGIMENTO:</strong> Orienta la strategia di comunicazione per aumentare il coinvolgimento emotivo del pubblico.</p>
+
                     <br>
-                    <p><strong>PUBLICITARIO:</strong> Incluir tendencias que sean atractivas y competentes con el mercado.</p>
+
+                    <p class="esp"><strong>PUBLICITARIO:</strong> Incluir tendencias que sean atractivas y competentes con el mercado.</p>
+                    <p class="eng"><strong>ADVERTISING:</strong> Incorporate trends that are attractive and relevant to the market.</p>
+                    <p class="ita"><strong>PUBBLICITÀ:</strong> Integra tendenze attraenti e rilevanti per il mercato.</p>
+
                     <br>
-                    <p><strong>SIMPLISTA:</strong> Menos es más</p>
+
+                    <p class="esp"><strong>SIMPLISTA:</strong> Menos es más</p>
+                    <p class="eng"><strong>SIMPLICITY:</strong>  Less is more.</p>
+                    <p class="ita"><strong>SEMPLICITÀ:</strong> Meno è meglio.</p>
+
                     <br>
-                    <p><strong>PREGNANCIA:</strong> Buscar el equilibrio entre el el texto y la imagenque generen una armonía óptica.</p>
+
+                    <p class="esp"><strong>PREGNANCIA:</strong> Buscar el equilibrio entre el el texto y la imagenque generen una armonía óptica.</p>
+                    <p class="eng"><strong>IMPRESSIVENESS:</strong> Aim for a balance between text and image to create visual harmony.</p>
+                    <p class="ita"><strong>EFFICACIA:</strong> Punta a un equilibrio tra testo e immagine per creare armonia visiva.</p>
+
                     <br>
-                    <p><strong>INFORMATIVO:</strong> Ser preciso y claro en la información para vender sin errores. </p>                    
+
+                    <p class="esp"><strong>INFORMATIVO:</strong> Ser preciso y claro en la información para vender sin errores.</p>
+                    <p class="eng"><strong>INFORMATIVE:</strong> Be precise and clear in your information to ensure accurate sales. </p>
+                    <p class="ita"><strong>INFORMATIVA:</strong> Sii preciso e chiaro nelle tue informa- </p>                    
+
                   </div><!-- Cierra col -->
 
                   <div class="col-md-6">                   
@@ -481,7 +569,9 @@
         <div class="container py-5">
           <div class="row">
             <div class="col-lg-6">
-              <h2>Catálogo Intense</h2> 
+              <h2 class="esp">Catálogo Intense</h2>
+              <h2 class="eng">Intense Catalog</h2>
+              <h2 class="ita">Catalogo Intense</h2> 
               <div class="imagenes-catalogo-intense">
                 <img src="imagenes/catalogs/catalogo-intense/intense-1.png" alt="Catálogo Intense" class="intense-1 img-responsive">
                 <img src="imagenes/catalogs/catalogo-intense/intense-2.png" alt="Catálogo Intense" class="intense-2 img-responsive">          
@@ -568,7 +658,16 @@
               <div class="col">           
                 <img src="imagenes/analogicos/vista-trasera-porton.png" alt="Plotting Design" class="img-responsive">
                 <div class="contenido">
-                  <p>Realización de mockups para aplicación en diseños para ploteos e impresiones de distintas escalas. Desde impresión de banners, remeras hasta camionetas. Siempre con el objetivo de destacar la marca cuidando todos los detalles cromáticos, tipográficos y las marcas de corte. </p>
+
+                  <!-- Español -->
+                  <p class="esp">Realización de mockups para aplicación en diseños para ploteos e impresiones de distintas escalas. Desde impresión de banners, remeras hasta camionetas. Siempre con el objetivo de destacar la marca cuidando todos los detalles cromáticos, tipográficos y las marcas de corte. </p>
+
+                  <!-- Inglés -->
+                  <p class="eng">Creation of mockups for use in designs for plotting and printing at various scales. From banners and t-shirts to van wraps. Always with the goal of highlighting the brand by carefully attending to all the details of color, typography, and crop marks.</p>
+
+                  <!-- Italiano -->
+                  <p class="ita">Creazione di mockup da utilizzare per la progettazione grafica e la stampa in diverse scale. Da banner e t-shirt a decorazioni per furgoni. Sempre con l'obiettivo di valorizzare il marchio, curando meticolosamente ogni dettaglio di colore, tipografia e segni di ritaglio.</p>
+
                 </div><!-- Cierra contenido -->
               </div><!-- Cierra col --> 
             </div><!-- Cierra row --> 
@@ -612,7 +711,16 @@
 
             <div class="col-lg-4 col-md-4">
               <div class="contenido">
-                <p>A la hora de generar un nuevo branding que cause impacto y un lenguaje fiel a su marca considero importante tomar decisiones precisas para definir trazos simples y pregnantes pensados para aplicar en diversos materiales de impresión. </p>
+
+                <!-- Español -->
+                <p class="esp">A la hora de generar un nuevo branding que cause impacto y un lenguaje fiel a su marca considero importante tomar decisiones precisas para definir trazos simples y pregnantes pensados para aplicar en diversos materiales de impresión.</p>
+
+                <!-- Inglés -->
+                <p class="eng">When creating a new brand identity that makes an impact and maintains a language true to your brand, I believe it's important to make precise decisions to define simple and memorable lines designed for application on various printed materials.</p>
+
+                <!-- Italiano -->
+                <p class="ita">Quando si crea una nuova identità di marca che abbia un impatto e mantenga un linguaggio fedele al marchio, credo sia importante prendere decisioni precise per definire linee semplici e memorabili, pensate per essere applicate su diversi materiali stampati.</p>
+
               </div><!-- Cierra contenido -->
             </div><!-- Cierra col -->
 
@@ -658,7 +766,16 @@
                 <img src="imagenes/analogicos/prototype-04.png" alt="Prototype" class="imagenes-prototype img-responsive">              
               </div><!-- Cierra imagen-prototype -->
                 <div class="contenido">
-                  <p>Diseños visuales que reflejan el adelanto de productos nuevos por medio de prototipos que puedan vender proyectos y propuestas innovadoras en el mercado. </p>
+
+                  <!-- Español -->
+                  <p class="esp">Diseños visuales que reflejan el adelanto de productos nuevos por medio de prototipos que puedan vender proyectos y propuestas innovadoras en el mercado. </p>
+
+                  <!-- Inglés -->
+                  <p class="eng">Visual designs that reflect the advancement of new products through prototypes that can sell innovative projects and proposals in the market.</p>
+
+                  <!-- Italiano -->
+                  <p class="ita">Progetti visivi che riflettono lo sviluppo di nuovi prodotti attraverso prototipi in grado di commercializzare progetti e proposte innovative</p>
+
                   <img src="imagenes/analogicos/logo-SKETCHUP.png" alt="logo SKETCHUP" class="logo-SKETCHUP img-responsive"> 
                 </div><!-- Cierra contenido -->
               </div><!-- Cierra col -->
@@ -684,10 +801,21 @@
                   <div class="container">
                     <div class="row">             
                       <div class="col-md-3 col-lg-3">                          
-                        <h3>IDENTIFY</h3>
+                        <h3 class="esp">IDENTIFICAR</h3>
+                        <h3 class="eng">IDENTIFY</h3>
+                        <h3 class="ita">ASCOLTO</h3>
                       </div><!-- Cierra col -->
-                      <div class="col-md-7 col-lg-7">             
-                        <p>Prestar atención a la finalidad de cada cliente es clave para poder brindar 3 alternativas que se acerquen a las ideas del cliente. </p>
+                      <div class="col-md-7 col-lg-7">
+
+                        <!-- Español -->           
+                        <p class="esp">Prestar atención a la finalidad de cada cliente es clave para poder brindar 3 alternativas que se acerquen a las ideas del cliente. </p>
+
+                        <!-- Inglés -->           
+                        <p class="eng">Paying attention to each client's purpose is key to being able to provide 3 alternatives that are close to the client's ideas. </p>
+
+                        <!-- Italiano -->           
+                        <p class="ita">Comprendere la finalità di ogni cliente è fondamentale per proporre tre alternative vicine alle sue idee. </p>
+
                       </div><!-- Cierra col -->
                       <div class="col-md-2 col-lg-2"> 
                         <div class="botones-work">            
@@ -708,11 +836,21 @@
                 <div class="work my-3" style="background:linear-gradient(90deg,rgba(68, 51, 107, 1) 0%, rgba(27, 23, 48, 1) 61%)">
                   <div class="container">
                     <div class="row">             
-                      <div class="col-md-3 col-lg-3">                          
-                        <h3>WORKING</h3>
+                      <div class="col-md-3 col-lg-3">  
+                        <h3 class="esp">LABORAL</h3>
+                        <h3 class="eng">WORKING</h3>
+                        <h3 class="ita">LAVORO</h3>
                       </div><!-- Cierra col -->
-                      <div class="col-md-7 col-lg-7">             
-                        <p>Con la precisión de la escucha, se entregará un boceto con las 3 opciones para que se puedan analizar y confeccionar los ajustes necesarios con el fin de llegar al concepto que el cliente necesita. </p>
+                      <div class="col-md-7 col-lg-7">  
+
+                      <!-- Español -->           
+                        <p class="esp">Con la precisión de la escucha, se entregará un boceto con las 3 opciones para que se puedan analizar y confeccionar los ajustes necesarios con el fin de llegar al concepto que el cliente necesita. </p>
+
+                        <!-- Inglés -->           
+                        <p class="eng">Based on this listening, I present a sketch with three options to analyze and perfect until we reach the desired concept. </p>
+
+                        <!-- Italiano -->           
+                        <p class="ita">A partire da questo ascolto, presento un bozzetto con tre opzioni da analizzare e perfezionare fino a raggiungere il concetto desiderato. </p>
                       </div><!-- Cierra col -->
                       <div class="col-md-2 col-lg-2"> 
                         <div class="botones-work">            
@@ -733,11 +871,22 @@
                 <div class="work my-3" style="background:linear-gradient(90deg,rgba(48, 41, 78, 1) 0%, rgba(51, 43, 79, 1) 54%, rgba(60, 48, 94, 1) 100%)">
                   <div class="container">
                     <div class="row">             
-                      <div class="col-md-3 col-lg-3">                          
-                        <h3>FEEDBACK</h3>
+                      <div class="col-md-3 col-lg-3"> 
+                      <h3 class="esp">FEEDBACK</h3>
+                      <h3 class="eng">FEEDBACK</h3>                         
+                      <h3 class="ita">RESTITUZIONE</h3>
                       </div><!-- Cierra col -->
-                      <div class="col-md-7 col-lg-7">             
-                        <p>Las adecuaciones y reformas se realizarán hasta 3 intercambios de evaluaciones con el cliente, con el propósito de establecer el concepto justo que refleja los requerimientos solicitados.</p>
+                      <div class="col-md-7 col-lg-7">
+
+                        <!-- Español -->             
+                        <p class="esp">Las adecuaciones y reformas se realizarán hasta 3 intercambios de evaluaciones con el cliente, con el propósito de establecer el concepto justo que refleja los requerimientos solicitados.</p>
+
+                        <!-- Inglés -->
+                        <p class="eng">The adjustments and reforms will be carried out up to 3 exchanges of evaluations with the client, with the purpose of establishing the fair concept that reflects the requested requirements.</p>
+
+                        <!-- Italiano -->
+                        <p class="ita">Effettuo fino a tre cicli di revisione insieme al cliente, con lo scopo di definire il concetto esatto che risponda alle sue esigenze. </p> 
+
                       </div><!-- Cierra col -->
                       <div class="col-md-2 col-lg-2"> 
                         <div class="botones-work">            
@@ -759,10 +908,21 @@
                   <div class="container">
                     <div class="row">             
                       <div class="col-md-3 col-lg-3">                          
-                        <h3>DEADLINE</h3>
+                        <h3 class="esp">DEADLINE</h3>
+                        <h3 class="eng">DEADLINE</h3>
+                        <h3 class="ita">CONSEGNA</h3>
                       </div><!-- Cierra col -->
-                      <div class="col-md-7 col-lg-7">             
-                        <p>Una vez definido el diseño y el concepto exacto aceptado, se enviarán archivos correspondientes a las aplicaciones solicitadas PNG, JPG y/o PDF junto con el archivo editable (archivo AI). Excepto para los trabajos de animación y edición de videos, en ese caso solo se entregarán los archivos en MP4.</p>
+                      <div class="col-md-7 col-lg-7">
+
+                        <!-- Español -->             
+                        <p class="esp">Una vez definido el diseño y el concepto exacto aceptado, se enviarán archivos correspondientes a las aplicaciones solicitadas PNG, JPG y/o PDF junto con el archivo editable (archivo AI). Excepto para los trabajos de animación y edición de videos, en ese caso solo se entregarán los archivos en MP4.</p>
+
+                        <!-- Inglés -->
+                        <p class="eng">UOnce the design is approved, the file is in rich formats (PNG, JPG and/or PDF), in addition to the modifiable file (AI). For animations and video, in which case only MP4 files will be provided in MP4 format.</p>
+
+                        <!-- Italiano --> 
+                        <p class="ita">Una volta approvato il design, consegno i file nei formati richiesti (PNG, JPG e/o PDF), insieme al file modificabile (AI). Per animazioni e video, la consegna avviene in formato MP4</p>
+
                       </div><!-- Cierra col -->
                       <div class="col-md-2 col-lg-2"> 
                         <div class="botones-work">            
@@ -785,50 +945,7 @@
         </div><!-- Cierra contenedor-video -->
       </section>
 
-      <section id="videos">         
-
-      <div class="container pt-5">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-slide--one">
-               <div>
-              <video src="./videos/01.mp4" loop=" false" controls width="100%"></video> 
-              </div><!-- Cierra div -->       
-            </div><!-- Cierra swiper-slide -->
-
-            <div class="swiper-slide swiper-slide--two">       
-              <div>
-                <video src="./videos/02.mp4" loop=" false" controls width="100%"></video>
-              </div><!-- Cierra div -->
-            </div><!-- Cierra swiper-slide -->
-
-            <div class="swiper-slide swiper-slide--three">       
-              <div>
-                <video src="./videos/03.mp4" loop=" false" controls width="100%"></video>
-              </div><!-- Cierra div -->
-            </div> <!-- Cierra swiper-slide -->     
-
-            <div class="swiper-slide swiper-slide--four">       
-              <div>
-                <video src="./videos/04.mp4" loop=" false" controls width="100%"></video>
-              </div><!-- Cierra div -->
-            </div><!-- Cierra swiper-slide --> 
-
-            <div class="swiper-slide swiper-slide--four">       
-              <div>
-                <video src="./videos/05.mp4" loop=" false" controls width="100%"></video>
-              </div><!-- Cierra div -->
-            </div><!-- Cierra swiper-slide --> 
-
-            <div class="swiper-slide swiper-slide--four">       
-              <div>
-                <video src="./videos/06.mp4" loop=" false" controls width="100%"></video>
-              </div><!-- Cierra div -->
-            </div><!-- Cierra swiper-slide --> 
-          </div>
-             <div class="swiper-pagination"></div><!-- Cierra swiper-pagination --> 
-        </div><!-- Cierra swiper -->
-      </div><!-- Cierra container -->       
+    <section id="videos">             
 
       <div class="col-md-8 offset-md-2">
         <div class="titulo-videos pt-4">            
@@ -875,7 +992,7 @@
 
       <div class="container pb-5">
         <div class="video">
-        <video src="./videos/work-arrangement.mp4" loop=" false" controls width="100%"></video>
+        <video src="" loop=" false" controls width="100%"></video>
       </div><!-- Cierra container -->
        </section>  
     </main>
@@ -897,6 +1014,8 @@
         </div><!-- Cierra d-flex -->
       </div><!-- Cierra container -->
     </footer>
+
+
 
     <!-- Galería de videos SOBRA-->
     <script>  
@@ -953,16 +1072,89 @@
           });
           this[this.get(0).paused ? "play" : "pause"]();
         }
-
         $('video').on("click play", function() {
           playFile.call(this);
         });
       })
     </script> 
 
+
+
+
+    <!-- Idioma -->
+
+<script>
+  const selector = document.getElementById('lang-selector');
+  const elementosEsp = document.querySelectorAll('.esp');
+  const elementosEng = document.querySelectorAll('.eng');
+  const elementosIta = document.querySelectorAll('.ita');
+
+ selector.addEventListener('change', (e) => {
+      const idioma = e.target.value;
+
+      if (idioma === 'eng') {
+          // Mostrar Inglés
+          elementosEsp.forEach(el => el.style.display = 'none');
+          elementosIta.forEach(el => el.style.display = 'none');
+          elementosEng.forEach(el => el.style.display = 'block');
+      } else if (idioma === 'ita') {
+          // Mostrar Italiano
+          elementosEsp.forEach(el => el.style.display = 'none');
+          elementosEng.forEach(el => el.style.display = 'none');
+          elementosIta.forEach(el => el.style.display = 'block');
+      } else {
+          // Mostrar Español por defecto (cuando valor sea 'esp')
+          elementosEsp.forEach(el => el.style.display = 'block');
+          elementosEng.forEach(el => el.style.display = 'none');
+          elementosIta.forEach(el => el.style.display = 'none');
+      }
+  });
+
+</script>
+
+
+   <!--  <script type="text/javascript">
+    const translations = {
+    es: {
+        title: "Mi Web Multilenguaje",
+        welcome: "Bienvenido a mi sitio web",
+        description: "Este es un ejemplo de página multilenguaje con JS."
+    },
+    en: {
+        title: "My Multilingual Website",
+        welcome: "Welcome to my website",
+        description: "This is a multilingual page example using JS."
+    },
+    pt: {
+        title: "Meu Site Multilíngue",
+        welcome: "Bem-vindo ao meu site",
+        description: "Este é um exemplo de página multilíngue usando JS."
+    }
+};
+
+function changeLanguage(lang) {
+    const elements = document.querySelectorAll('[data-key]');
+    elements.forEach(element => {
+        const key = element.getAttribute('data-key');
+        if (translations[lang] && translations[lang][key]) {
+            element.textContent = translations[lang][key];
+        }
+    });
+    document.documentElement.lang = lang;
+}
+
+document.getElementById('lang-selector').addEventListener('change', (e) => {
+    changeLanguage(e.target.value);
+});
+</script> -->
+
     <!-- scripts -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
     <script  src="js/script.js"></script>
 
+
   </body>
 </html>
+
+
+

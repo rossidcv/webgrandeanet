@@ -48,6 +48,56 @@ var lastScrollTop = 0;
 });
 
 
+$(document).ready(function() {
+    // 1. Estado inicial: mostrar español y ocultar inglés
+    $(".eng").hide(); 
+     $(".ita").hide();
+    $(".esp").show();
+    $(".btn-espanol").addClass("activo");
+
+    // 2. Cambiar a idioma inglés
+    $(".btn-ingles").click(function() {
+        $(".esp").hide();
+        $(".ita").hide();
+        $(".eng").show();
+        
+        // Control de clases activas en los botones
+        $(".btn-espanol").removeClass("activo");
+        $(".btn-ingles").addClass("activo");
+        $(".btn-italiano").removeClass("activo");
+    });
+
+    // 3. Cambiar a idioma español
+    $(".btn-espanol").click(function() {
+        $(".eng").hide();
+        $(".ita").hide();
+        $(".esp").show();
+        
+        // Control de clases activas en los botones
+        $(".btn-ingles").removeClass("activo");
+        $(".btn-espanol").addClass("activo");
+        $(".btn-italiano").removeClass("activo");
+    });
+
+    // 3. Cambiar a idioma italiano
+    $(".btn-italiano").click(function() {
+        $(".eng").hide();
+        $(".esp").hide();
+        $(".ita").show();
+        
+        // Control de clases activas en los botones
+        $(".btn-ingles").removeClass("activo");
+        $(".btn-espanol").addClass("activo");
+        $(".btn-italiano").addClass("activo");
+    });
+});
+
+
+
+
+
+
+
 /*SMOOTH SCROLLING*/
 $(function () {
   $('a[href^="#"]').on('click', function(event) {
@@ -86,5 +136,56 @@ function loading() {
 }
 
 setTimeout(loading, 1000);
+
+
+$(document).ready(function(){
+    var youtubeSwiper = new Swiper('.swiper-container', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        // function to stop youtube video on slidechange
+        on: {
+            slideChange: function (el) {
+              $('.swiper-slide').each(function () {
+                  var youtubePlayer = $(this).find('iframe').get(0);
+                  if (youtubePlayer) {
+                    youtubePlayer.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+                  }
+              });
+            },
+        },
+    });
+});
+
+
+
+
+
+// $(document).ready(function(){
+//   $(".eng").hide();
+//   $("button.ingles").click(function(){
+//     $(".esp").toggle();
+//     $(".eng").toggle();
+//   })
+//   $("button.espanol").click(function(){
+//     $(".esp").toggle();
+//     $(".eng").toggle();
+//   })
+// });
+
+
+
+// $(document).ready(function(){
+//   $(".eng").hide();
+//   $(".ingles").click(function(){
+//     $(".esp").toggle();
+//     $(".eng").toggle();
+//   })
+//   $(".espanol").click(function(){
+//     $(".esp").toggle();
+//     $(".eng").toggle();
+//   })
+// });
 
 

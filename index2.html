@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="description" content="Soy Anabel Grande diseñadora grafica y licenciada en turismo, busco por el mundo tendencias gráficas reales adaptadas a cada cultura humana que sean de aporte en cada trabajo y proyecto con el fin de mejorar la comunicación visual y funcional para cada cliente.">  
+    <meta name="keywords" content="Anet Grande, diseñadora grafica, licenciada en turismo, diseño web, programación, bases de datos, digital, analógicos, brochures, videos, others,design social media, plotting design, 3d applications, prototype, work arrangement, identity, working, feedback, deadline">
+    <title>Anabel Grande</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="imagenes/favicon.jpg" type="image/x-icon">
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cambai-minimalist" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/6fa591daa0aa2d0f845653486954aca5?family=Akira+Expanded" rel="stylesheet">
+
+
+
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/funciones.js"></script>
+
+    <!-- CSS -->  
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"/> 
+
+
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  </head>
+
+<body>
+
+    <div class="idiomas"> 
+        <select id="lang-selector"> 
+            <option class="espanol" value="esp">Español</option> 
+            <option class="ingles" value="eng">English</option>
+            <option class="italiano" value="ita">Italiano</option>  
+        </select> 
+    </div>
+
+    <!-- Títulos dinámicos -->
+    <h1 class="esp">Agustín Palisa - Desarrollador Web</h1> 
+    <h1 class="eng">Agustín Palisa - Web Developer</h1>
+    <h1 class="ita">Agustín Palisa - Sviluppatore web</h1>
+
+    <script>
+        const selector = document.getElementById('lang-selector');
+        const elementosEsp = document.querySelectorAll('.esp');
+        const elementosEng = document.querySelectorAll('.eng');
+        const elementosIta = document.querySelectorAll('.ita');
+
+       selector.addEventListener('change', (e) => {
+            const idioma = e.target.value;
+
+            if (idioma === 'eng') {
+                // Mostrar Inglés
+                elementosEsp.forEach(el => el.style.display = 'none');
+                elementosIta.forEach(el => el.style.display = 'none');
+                elementosEng.forEach(el => el.style.display = 'block');
+            } else if (idioma === 'ita') {
+                // Mostrar Italiano
+                elementosEsp.forEach(el => el.style.display = 'none');
+                elementosEng.forEach(el => el.style.display = 'none');
+                elementosIta.forEach(el => el.style.display = 'block');
+            } else {
+                // Mostrar Español por defecto (cuando valor sea 'esp')
+                elementosEsp.forEach(el => el.style.display = 'block');
+                elementosEng.forEach(el => el.style.display = 'none');
+                elementosIta.forEach(el => el.style.display = 'none');
+            }
+        });
+
+    </script>
+
+</body>
+</html>
