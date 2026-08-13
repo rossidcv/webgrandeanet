@@ -136,14 +136,13 @@ select {
   font-size:14px;
   font-weight:200;
   color: white;
-  background-color: grey;
+  background-color: #6d5497;
 }
-
-.ingles:hover, 
-.espanol:hover,
-.italiano:hover {
-  background-color: #999;
-  color: red;
+select {  
+  color: white;
+  background-color: #6d5497;
+  border-radius: 5px;
+  border:none; 
 }
 
 /*Botón Menú*/
@@ -229,7 +228,8 @@ select {
   z-index: 10;
 }
 #inicio video,
-#work-arrangement video {
+#work-arrangement video,
+#contacto video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -393,7 +393,8 @@ select {
 }
 
 /* Botones*/
-label {
+#work-arrangement label,
+.caracteristicas label {
   position: relative;
   width: 40px;
   height: 20px;
@@ -405,10 +406,12 @@ label {
               inset 0 -3px 5px rgba(255, 255, 255, 0.9);
   cursor: pointer;
 }
-label input {
+#work-arrangement label input,
+.caracteristicas label input {
   display: none;
 }
-label span {
+#work-arrangement label span,
+.caracteristicas label span  {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -418,7 +421,8 @@ label span {
   background: #252525;    
   transition: .2s;   
 }
-label span::before {
+#work-arrangement label span::before,
+.caracteristicas label span::before {
   content: 'OFF';
   position: absolute;
   font-size: 10px;
@@ -435,11 +439,13 @@ label span::before {
   text-shadow: 0 0 5px #8f1731,
                0 0 10px #8f1731;
 }
-label input:checked ~ span {
+#work-arrangement label input:checked ~ span,
+.caracteristicas label input:checked ~ span{
   bottom: -15px;
   left: 15px;
 }
-label input:checked ~ span::before {
+#work-arrangement label input:checked ~ span::before,
+.caracteristicas label input:checked ~ span::before{
   content: 'ON';
   position: absolute;
   font-family: "Raleway", sans-serif;
@@ -724,7 +730,7 @@ label input:checked ~ span::before {
   display:none;
 }
 #digital h2{
-  display:none;
+  display:none !important;
 }
 .imagen-digital {
   position: relative;
@@ -1257,6 +1263,214 @@ label input:checked ~ span::before {
 }
 
 
+/*CONTACTO*/
+/*SECCIÓN WORK ARRANGEMENT */
+#contacto .contenedor-contacto {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;  /*Altura completa de la pantalla */
+  overflow: hidden;  
+  z-index: 10;
+}
+#contacto video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -10;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+#inicio video,
+#work-arrangement video,
+#contacto video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -10;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+.formulario {
+  background-color: rgba(250, 250, 250, 1.0);
+}
+#contacto label {
+  font-family: 'D-DIN', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  color: #000;
+  background:transparent !important;
+  margin: 0;
+}
+#contacto input {
+  margin: 10px 0;  
+  border: 1px solid #ffffff;     /* Borde opcional para ver el input */
+  color: #ffffff;   
+}
+#contacto input:focus {
+  color: red !important;
+  font-style: italic;  
+  border-bottom: 1px solid #000;
+  box-shadow: none;
+}
+.contacto {
+  display: flex;
+  flex-wrap: wrap;
+}
+.datos-contacto,
+.formulario {
+  height: auto;
+  padding: 50px;
+}
+.datos-contacto {
+  border-radius: 40px 0px 0px 40px;
+  height:100%;
+  background-color: rgba(250, 250, 250, 0.6);;
+}
+.formulario {  
+  border-radius: 0px 40px 40px 0px;
+  height: 100%;  
+}
+.formulario textarea {  
+  margin-bottom: 10px;
+}
+.formulario button {  
+  background-color: #251653;
+  border-radius: 50px;
+  border:none;  
+}
+.formulario button:hover { 
+  background-color: #6d5497 !important;
+}
+.correo-electronico { 
+  display: flex;       /* Pone los elementos en fila */
+  align-items: center; /* Centra el icono y el texto verticalmente */
+  gap: 10px;
+  font-family: 'D-DIN', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.correo-electronico i {
+  font-size: 20px;     /* Tamaño del icono */
+  color: #333;         /* Color del icono */
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+}
+
+
+.bloque ul { 
+  padding: 0;
+}
+
+.bloque ul li { 
+  display: flex;       /* Pone los elementos en fila */
+  align-items: center; /* Centra el icono y el texto verticalmente */
+  gap: 10px;
+  font-family: 'D-DIN', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.bloque ul li i {
+  font-size: 16px;    
+  color: #333;       
+  display: flex;
+  align-items: center;
+}
+.bloque ul li a {
+  color: #333; 
+  transition:.5s;   
+}
+.bloque ul li a:hover {
+  color: #6d5497;  
+}
+.bandera-italia {
+  width: 15px;
+  height: 10px;
+  background: linear-gradient(
+    to right,
+    #009246 0%,   #009246 33.33%,
+    #f1f2f1 33.33%, #f1f2f1 66.66%,
+    #ce2b37 66.66%, #ce2b37 100%
+  );
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.bandera-argentina {
+  width: 15px;
+  height: 10px;
+  background: linear-gradient(
+    to bottom,
+    #74acdf 0%, #74acdf 33.33%,
+    #ffffff 33.33%, #ffffff 66.66%,
+    #74acdf 66.66%, #74acdf 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.sol-bandera {
+  font-size: 3px;
+}
+.bloque-negro {
+  background-color: #000;
+  width: 100%;
+  height: 20px;
+  border-radius: 50px;
+  margin: 30px 0;
+}
+.iconos-redes {
+  display: flex;
+  justify-content:space-around; 
+  /* align-items: center;*/ 
+  gap: 10px; /* Espacio entre los iconos */
+  font-size: 35px;
+
+}
+.iconos-redes .youtube {
+  gap: 10px; /* Espacio entre los iconos */
+  font-size: 50px;
+  position: relative;
+  top: -10px;
+}
+.contenedor {
+  display: flex;
+  align-items: center; /* Alinea el icono y el bloque verticalmente */
+  gap: 10px; /* Espacio de separación entre ellos */
+}
+.whatsapp {
+  font-size: 35px;
+  position: relative;
+  top: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*FOOTER*/
 footer {
   background-color: #251653;
@@ -1380,6 +1594,9 @@ footer span{
     width: 100% !important;
     top: 0;
     margin-bottom:0;
+  }
+  .contacto {
+    flex: 100%;
   }
 }
 
