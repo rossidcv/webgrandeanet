@@ -1,3 +1,4 @@
+//EFECTO SCROLL MENÚ
 $(document).ready(function(){
   var flag = false;
   var scroll;
@@ -46,6 +47,32 @@ var lastScrollTop = 0;
     hamburger.classList.toggle("is-active");
   }); 
 });
+
+//EFECTO PORCENTAJE
+function loading() {
+  document.querySelectorAll(".bar").forEach(function(current) {
+    let startWidth = 0;
+    const endWidth = current.dataset.size;
+    
+    /* 
+    setInterval() time sholud be set as trasition time / 100. 
+    In our case, 2 seconds / 100 = 20 milliseconds. 
+    */
+    const interval = setInterval(frame, 20);
+
+    function frame() {
+      if (startWidth >= endWidth) {
+        clearInterval(interval);
+      } else {
+          startWidth++;
+          current.style.width = `${endWidth}%`;
+          current.firstElementChild.innerText = `${startWidth}%`;
+        }
+     }
+  });
+}
+setTimeout(loading, 1000);
+
 
 
 $(document).ready(function() {
@@ -111,31 +138,7 @@ $(function () {
   });  
 });
 
-//EFECTO PORCENTAJE
-function loading() {
-  document.querySelectorAll(".bar").forEach(function(current) {
-    let startWidth = 0;
-    const endWidth = current.dataset.size;
-    
-    /* 
-    setInterval() time sholud be set as trasition time / 100. 
-    In our case, 2 seconds / 100 = 20 milliseconds. 
-    */
-    const interval = setInterval(frame, 20);
 
-    function frame() {
-      if (startWidth >= endWidth) {
-        clearInterval(interval);
-      } else {
-          startWidth++;
-          current.style.width = `${endWidth}%`;
-          current.firstElementChild.innerText = `${startWidth}%`;
-        }
-     }
-  });
-}
-
-setTimeout(loading, 1000);
 
 
 $(document).ready(function(){
