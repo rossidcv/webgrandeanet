@@ -5,6 +5,54 @@
     font-style: normal;
 }
 
+.logo-carousel {
+  width: 100%;
+  background: #fff;
+}
+
+.logo-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.logo-track:hover {
+  animation-play-state: paused; /* Pausa al pasar el ratón */
+}
+
+.slide img {
+  height: 150px; /* Ajusta el alto del logo */
+  width: auto;
+   /*object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7; */
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.slide img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
   margin: 0;
   padding: 0;
@@ -174,7 +222,7 @@ select {
   background-color: #6d5497;
   border-radius: 5px;
   border:none;
-  padding: 5px 10px;
+  padding: 3px;
   font-size: 16px; 
 }
 select:focus {  
@@ -1410,7 +1458,7 @@ footer span{
     font-size: 15px;
   }
   .titulo-color {
-    font-size: 85px !important;
+    font-size: 85px;
   }
   .subtitulo-color {
     font-size: 45px;
@@ -1499,7 +1547,7 @@ footer span{
     flex: 100%;
   }
   .titulo-color, 
-  .titulo-blanco  {
+  .titulo-blanco {
     font-size:70px;
   }
   .subtitulo-color,
@@ -1574,6 +1622,13 @@ footer span{
   }  
   .hamburger--minus {
     display: block;
+    position: relative;
+    right: 0;
+  }
+  .idiomas {
+    position: absolute;
+    right: 100px;
+    top: 12px; 
   }
   .caracteristicas {
     margin-right: 0;
@@ -1702,6 +1757,10 @@ footer span{
   .work h3.ita {
     border-right:2px solid transparent;
   } 
+  .titulo-plotting .subtitulo-color,
+  #aplications .subtitulo-color {
+    top:-10px;
+  }
 } 
 
 @media (max-width: 600px) {    
@@ -1745,4 +1804,13 @@ footer span{
   #work-arrangement .titulo-blanco {
     font-size: 30px;
   } 
+  .titulo-plotting .subtitulo-color,
+  #aplications .subtitulo-color,
+  .subtitulo-color, 
+  .subtitulo-blanco,
+   #contacto .subtitulo-blanco, 
+   #work-arrangement .subtitulo-blanco, 
+   #aplications .subtitulo-color  {
+    top:0px;
+  }
 }  
