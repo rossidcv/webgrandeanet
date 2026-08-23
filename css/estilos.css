@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Akira Expanded';
     src: url('Fuentes/AkiraExpanded_Super_Bold.woff2') format('.woff2');
-    font-weight: bolder;
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -619,6 +619,17 @@ select:focus {
 }
 
 /* SECCIÓN DISEÑOS Y PROYECTOS */
+#carousel h2,
+#catalogo-intense h2,
+#catalogo-serfaty h2,
+#catalogo-vapes h2, 
+#analogicos h2,
+#aplications h2,
+#prototype h2,
+#work-arrangement h2,
+#videos h2 {
+  display: none;
+}
 #carousel {
   padding:50px 0;
   background-image: url(../imagenes/anetgrande/fondo-02.png);
