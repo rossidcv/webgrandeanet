@@ -5,54 +5,6 @@
     font-style: normal;
 }
 
-.logo-carousel {
-  width: 100%;
-  background: #fff;
-}
-
-.logo-track {
-  display: flex;
-  width: max-content;
-  animation: scroll 25s linear infinite;
-}
-
-.logo-track:hover {
-  animation-play-state: paused; /* Pausa al pasar el ratón */
-}
-
-.slide img {
-  height: 150px; /* Ajusta el alto del logo */
-  width: auto;
-   /*object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.7; */
-  transition: filter 0.3s ease, opacity 0.3s ease;
-}
-
-.slide img:hover {
-  filter: grayscale(0%);
-  opacity: 1;
-}
-
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 body {
   margin: 0;
   padding: 0;
@@ -588,36 +540,6 @@ select:focus {
   font-weight: bold;
 }
 
-/*logos*/
-.carrusel-contenedor {
-  width: 100%;
-  overflow: hidden;
-  background: #ffffff;
-}
-.marcas {
-  height: 100px;
-  display: flex;
-  width: calc(250px * 14); /* Mantiene el tamaño de todos los elementos juntos */
-  animation: animacion 40s linear infinite;
-}
-.marcas img {
-  width: 250px;
-  height: 100px;
-  object-fit: contain; 
-  flex-shrink: 0;     
-}
-.marcas img:hover {
-  transform: scale(1.2);
-}
-@keyframes animacion {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%); 
-  }
-}
-
 /* SECCIÓN DISEÑOS Y PROYECTOS */
 #carousel h2,
 #catalogo-intense h2,
@@ -638,7 +560,6 @@ select:focus {
   background-position: left; 
   background-repeat: no-repeat;
 }
-
 .carousel-indicators [data-bs-target] {
   background-color:#fff;
   width: 8px;
@@ -680,6 +601,34 @@ select:focus {
   width: 70%;
   margin: 0 auto;
   padding: 0;
+}
+
+/*LOGOS*/
+.logo-carousel {
+  width: 100%;
+  background: #fff;
+}
+.logo-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+.logo-track:hover {
+  animation-play-state: paused; /* Pausa al pasar el ratón */
+}
+.logo-carousel .slide img {
+  height: 150px; 
+  width: auto;
+  transition: filter 0.3s ease, opacity 0.3s ease, transform 0.2s ease;
+}
+.logo-carousel .slide img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 /* SECCIÓN CARDS */
@@ -1636,11 +1585,16 @@ footer span{
     position: relative;
     right: 0;
   }
+  .hamburger--minus {
+    display: block;
+    position: relative;
+    right: 0;
+  } 
   .idiomas {
     position: absolute;
     right: 100px;
-    top: 12px; 
-  }
+    top: 12px;
+  } 
   .caracteristicas {
     margin-right: 0;
     margin-left: 0;
@@ -1774,7 +1728,7 @@ footer span{
   }
 } 
 
-@media (max-width: 600px) {    
+@media (max-width: 600px) {  
   .contenido-video h1 {
     font-size: 25px;
   }
