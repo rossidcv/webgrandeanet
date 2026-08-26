@@ -1175,9 +1175,9 @@ select:focus {
   width:50%;
   margin: 0 auto;
 }
-.ytAttributedStringImageAlignmentVerticalCenter
-.ytd-rich-section-renderer:has(#title[title="Shorts"]),
-.ytd-reel-shelf-renderer {
+.ytAttributedStringImageAlignmentVerticalCenter,
+ytd-rich-section-renderer:has(#title[title="Shorts"]),
+ytd-reel-shelf-renderer {
   display: none !important;
 }
 
