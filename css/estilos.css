@@ -1171,9 +1171,14 @@ select:focus {
 .swiper-slide-shadow-right {
   background-image:linear-gradient( transparent) !important; 
 }
-.video  {
+.video {
   width:50%;
   margin: 0 auto;
+}
+.ytAttributedStringImageAlignmentVerticalCenter
+.ytd-rich-section-renderer:has(#title[title="Shorts"]),
+.ytd-reel-shelf-renderer {
+  display: none !important;
 }
 
 /*CONTACTO*/
