@@ -548,8 +548,7 @@ select:focus {
 #analogicos h2,
 #aplications h2,
 #prototype h2,
-#work-arrangement h2,
-#videos h2 {
+#work-arrangement h2 {
   display: none;
 }
 #carousel {
