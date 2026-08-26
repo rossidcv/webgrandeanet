@@ -1176,11 +1176,13 @@ select:focus {
   margin: 0 auto;
 }
 .ytAttributedStringImageAlignmentVerticalCenter,
-ytd-rich-section-renderer:has(#title[title="Shorts"]),
-ytd-reel-shelf-renderer {
+.ytd-rich-section-renderer:has(#title[title="Shorts"]),
+.ytd-reel-shelf-renderer {
   display: none !important;
 }
-
+.watch-on-youtube-button {
+  display: none !important;
+}
 /*CONTACTO*/
 #contacto .subtitulo-blanco {
   font-size: 48px;
