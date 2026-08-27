@@ -1140,12 +1140,12 @@
   <script>
     $(document).ready(function () {
       function playFile() {
-        $("iframe").not(this).each(function () {
+        $("video").not(this).each(function () {
           $(this).get(0).pause();
         });
         this[this.get(0).paused ? "play" : "pause"]();
       }
-      $('iframe').on("click play", function() {
+      $('video').on("click play", function() {
         playFile.call(this);
       });
     })
