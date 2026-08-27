@@ -192,14 +192,3 @@ $(document).ready(function(){
 // });
 
 
-// Si usas SwiperJS u otro manejador de swipe, detecta el evento de deslizamiento:
-mySwiper.on('slideChange', function () {
-    const iframes = document.querySelectorAll('iframe');
-    
-    iframes.forEach(iframe => {
-        iframe.contentWindow.postMessage(
-            JSON.stringify({ event: 'command', func: 'pauseVideo', args: [] }), 
-            'https://www.youtube.com'
-        );
-    });
-});
