@@ -1143,7 +1143,14 @@ select:focus {
   padding: 7px;
 }
 
-/*SECCIÓN VIDEOS*/
+/*SECCIÓN VIDEOS*/.swiper {
+ 
+  
+  .swiper-video {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
 .swiper {
   width: 100%;
   padding-bottom: 35px;
