@@ -929,13 +929,13 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide swiper-slide--one">
             <div>            
-              <iframe class="swiper-video" width="400" height="400" src="https://www.youtube.com/embed/Qu39PwJOIYM?si=4BZrW23dvt1C8VnW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen controls="0" rel="0" modestbranding="1"></iframe>
+              <iframe width="400" height="400" src="https://www.youtube.com/embed/Qu39PwJOIYM?si=4BZrW23dvt1C8VnW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen controls="0" rel="0" modestbranding="1"></iframe>
             </div><!-- Cierra div -->            
           </div><!-- Cierra swiper-slide -->
 
           <div class="swiper-slide swiper-slide--two">    
             <div>
-              <iframe class="swiper-video" width="315" height="560" src="https://www.youtube.com/embed/3d1peoybqko?si=R2f7nLB9wTtwRikU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen controls="0" rel="0" modestbranding="1"></iframe>
+              <iframe width="315" height="560" src="https://www.youtube.com/embed/3d1peoybqko?si=R2f7nLB9wTtwRikU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen controls="0" rel="0" modestbranding="1"></iframe>
             </div><!-- Cierra div -->
           </div><!-- Cierra swiper-slide -->
 
@@ -965,7 +965,7 @@
               <iframe width="315" height="560" src="https://www.youtube.com/embed/zTr5dnxjt4c?si=W4wJ99G6WZFdJon2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen controls="0" rel="0" modestbranding="1"></iframe>
             </div><!-- Cierra div -->            
           </div><!-- Cierra swiper-slide -->
-
+          
           <div class="swiper-slide swiper-slide--six">      
             <div>
               <iframe width="315" height="560" src="https://www.youtube.com/embed/3Xwev5KJ_AI?si=cytws9XcAPLhFlB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen controls="0" rel="0" modestbranding="1"></iframe>
@@ -1133,41 +1133,6 @@
       </div><!-- Cierra d-flex -->
     </div><!-- Cierra container -->
   </footer> 
-
-
-
-
-<script>
-  const swiper = new Swiper('.mySwiper', {
-    loop: true, // Funciona perfectamente incluso con bucles activos
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-      },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    on: {
-      // Se ejecuta inmediatamente cuando el usuario empieza el swipe/deslizamiento
-      slideChange: function () {
-        const iframes = document.querySelectorAll('.swiper-video');
-        
-        iframes.forEach(iframe => {
-          if (iframe.contentWindow) {
-            // Pausa de forma segura cada video de la página
-            iframe.contentWindow.postMessage(
-              '{"event":"command","func":"pauseVideo","args":""}', 
-              '*'
-            );
-          }
-        });
-      },
-    },
-  });
-</script>
-
-
 
   <!-- Galería de videos -->
   <script>
