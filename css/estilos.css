@@ -4,7 +4,7 @@
     font-weight: bold;
     font-style: normal;
 }
-
+88mb pesa carpeta de trabajo
 body {
   margin: 0;
   padding: 0;
@@ -259,7 +259,7 @@ select:focus {
 #inicio {
   height: 100%;
   margin: 0 auto; 
-  background-image: url(../imagenes/anetgrande/fondo-01.png);
+  background-image: url(../imagenes/anetgrande/fondo-01.jpg);
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
@@ -544,8 +544,7 @@ select:focus {
 #carousel h2,
 #catalogo-intense h2,
 #catalogo-serfaty h2,
-#catalogo-vapes h2, 
-#analogicos h2,
+#catalogo-vapes h2,
 #aplications h2,
 #prototype h2,
 #work-arrangement h2 {
@@ -553,7 +552,7 @@ select:focus {
 }
 #carousel {
   padding:50px 0;
-  background-image: url(../imagenes/anetgrande/fondo-02.png);
+  background-image: url(../imagenes/anetgrande/fondo-02.jpg);
   width: 100%;
   background-size: cover; 
   background-position: left; 
@@ -820,7 +819,7 @@ select:focus {
   position: relative;
 }
 #catalogo-intense {   
-  background-image: url(../imagenes/catalogs/catalogo-intense/catalogo-intense.png);
+  background-image: url(../imagenes/catalogs/catalogo-intense/catalogo-intense.jpg);
   background-size: contain; 
 }
 #catalogo-intense:before,
@@ -881,7 +880,7 @@ select:focus {
 
 /*CATÁLOGO SERFATY*/
 #catalogo-serfaty {   
-  background-image: url(../imagenes/catalogs/catalogo-serfaty/Fondo-LeandroSertfaty.png);
+  background-image: url(../imagenes/catalogs/catalogo-serfaty/Fondo-LeandroSertfaty.jpg);
   background-size: cover;
 }
 .FLYERserfaty {
@@ -997,7 +996,12 @@ select:focus {
   margin-bottom: -15px
 }
 #analogicos img {
-  width: 100% !important;
+  width: 100%;
+}
+#analogicos .imagen-fiorino {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
 }
 #analogicos .logo-digital {
   width: 50% !important;
@@ -1371,6 +1375,9 @@ select:focus {
   border-radius: 50px;
   border:none;  
   transition: 1s ease-out;
+  width: auto;
+  position: relative;
+  left: 12px;
 }
 .formulario button:hover { 
   background-color: #6d5497 !important;
@@ -1762,8 +1769,12 @@ footer span{
   #aplications .subtitulo-color {
     font-size: 20px;
   } 
-  
+  #analogicos img,
+  #analogicos .imagen-fiorino {
+    width: 100%;
+  }  
 }
+
 @media (max-width: 480px) {    
   .humo-colores {
     top: 35px;
