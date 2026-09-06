@@ -4,7 +4,57 @@
     font-weight: bold;
     font-style: normal;
 }
-88mb pesa carpeta de trabajo
+
+/*88mb pesa carpeta de trabajo*/
+
+
+
+
+
+
+
+
+.contenedor-fondo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -2; /* Se envía al fondo profundo */
+            pointer-events: none; /* Evita que el usuario pause o interactúe con el video */
+        }
+.contenedor-fondo iframe {
+            width: 100vw;
+            height: 56.25vw; /* Mantiene proporción 16:9 en pantallas anchas */
+            min-height: 100vh;
+            min-width: 177.77vh; /* Mantiene proporción 16:9 en pantallas altas */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }.capa-filtro {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de opacidad */
+            z-index: -1; 
+        }.contenido {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+        }
+
+
+
+        
 body {
   margin: 0;
   padding: 0;
